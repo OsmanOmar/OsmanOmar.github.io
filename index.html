@@ -30,7 +30,9 @@
                 <tr ng-repeat="item in data">
                     <td>{{item.name}}</td>
                     <td>{{item.description}}</td>
-                    <td>{{item.site}}</td>
+                    <td>
+                        <a ng-href="{{item.site}}" target="_blank">{{item.site}}</a>
+                    </td>
                 </tr>
             </tbody>
         </table>
