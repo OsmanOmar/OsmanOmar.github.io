@@ -4,6 +4,6 @@ angular.module("app",[])
         url: "data.json",
         method: "get"
     }).then(function(response){
-        $scope.data = response;
+        $scope.data = response.data;
     })
 })
