@@ -3,7 +3,7 @@ angular.module("app",[])
     $http({
         url: "data.json",
         method: "get"
-    }).success(function(response){
+    }).then(function(response){
         $scope.data = response;
     })
 })
