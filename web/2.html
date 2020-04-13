@@ -1,0 +1,2560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <span>N</span>
+  <ul>
+    <li>
+      <h3>NDEFMessage</h3>
+      <p>The NDEFMessage interface of the Web NFC API is an abstract interface that represents message that can be
+        received or sent to a to compatible NFC devices, e.g. NFC tags supporting NDEF.</p>
+    </li>
+    <li>
+      <h3>NDEFReader</h3>
+      <p>The NDEFReader interface of the Web NFC API is an abstract interface used to read data from compatible NFC
+        devices, e.g. NFC tags supporting NDEF, when these devices are within the reader's magnetic induction field.
+      </p>
+    </li>
+    <li>
+      <h3>NDEFReadingEvent</h3>
+      <p>The NDEFReadingEvent interface represents events despatched on new NFC readings obtained by NDEFReader.</p>
+    </li>
+    <li>
+      <h3>NDEFRecord</h3>
+      <p>The NDEFRecord interface of the Web NFC API is an abstract interface that represents data that can be read
+        from or written to compatible NFC devices, e.g. NFC tags supporting NDEF.</p>
+    </li>
+    <li>
+      <h3>NDEFWriter</h3>
+      <p>The NDEFWriter interface of the Web NFC API is an abstract interface used to write data to compatible NFC
+        devices, e.g. NFC tags supporting NDEF, when these devices are within the reader's magnetic induction field.
+      </p>
+    </li>
+    <li>
+      <h3>NameList </h3>
+      <p>The NameList interface provides an abstraction for an ordered collection of name and namespace value pairs.
+        Items can be accessed by a 0-based index. The DOM spec does not specify how the collection is to be
+        implemented.</p>
+    </li>
+    <li>
+      <h3>NamedNodeMap</h3>
+      <p>The NamedNodeMap interface represents a collection of Attr objects. Objects inside a NamedNodeMap are not
+        in any particular order, unlike NodeList, although they may be accessed by an index as in an array.</p>
+    </li>
+    <li>
+      <h3>NavigationPreloadManager</h3>
+      <p>The NavigationPreloadManager interface of the the Service Worker API provides methods for managing the
+        preloading of resources with a service worker.</p>
+    </li>
+    <li>
+      <h3>Navigator</h3>
+      <p>The Navigator interface represents the state and the identity of the user agent. It allows scripts to query
+        it and to register themselves to carry on some activities.</p>
+    </li>
+    <li>
+      <h3>NavigatorConcurrentHardware</h3>
+      <p>The NavigatorConcurrentHardware mixin adds to the Navigator interface features which allow Web content to
+        determine how many logical processors the user has available, in order to let content and Web apps optimize
+        their operations to best take advantage of the user's CPU.</p>
+    </li>
+    <li>
+      <h3>NavigatorID</h3>
+      <p>The NavigatorID interface contains methods and properties related to the identity of the browser.</p>
+    </li>
+    <li>
+      <h3>NavigatorLanguage</h3>
+      <p>NavigatorLanguage contains methods and properties related to the language of the navigator.</p>
+    </li>
+    <li>
+      <h3>NavigatorOnLine</h3>
+      <p>The NavigatorOnLine interface contains methods and properties related to the connectivity status of the
+        browser.</p>
+    </li>
+    <li>
+      <h3>NavigatorPlugins </h3>
+      <p>The NavigatorPlugins mixin adds to the Navigator interface methods and properties for discovering and
+        interacting with plugins installed into the browser.</p>
+    </li>
+    <li>
+      <h3>NavigatorStorage</h3>
+      <p>The NavigatorStorage mixin adds to the Navigator and WorkerNavigator interfaces the Navigator.storage
+        property, which provides access to the StorageManager singleton used for controlling the persistence of data
+        stores as well as obtaining information</p>
+    </li>
+    <li>
+      <h3>NetworkInformation </h3>
+      <p>The NetworkInformation interface provides information about the connection a device is using to communicate
+        with the network and provides a means for scripts to be notified if the connection type changes. The
+        NetworkInformation interfaces cannot be instantiated. It is instead accessed through the connection property
+        of the&nbsp;Navigator interface.</p>
+    </li>
+    <li>
+      <h3>Node</h3>
+      <p>Node is an interface from which various types of DOM API objects inherit, allowing those types to be
+        treated similarly; for example, inheriting the same set of methods, or being testable in the same way.</p>
+    </li>
+    <li>
+      <h3>NodeFilter</h3>
+      <p>A NodeFilter interface represents an object used to filter the nodes in a NodeIterator or TreeWalker. A
+        NodeFilter knows nothing about the document or traversing&nbsp;nodes; it only knows how to evaluate a single
+        node against the provided filter.</p>
+    </li>
+    <li>
+      <h3>NodeIterator</h3>
+      <p>The NodeIterator interface represents an iterator over the members of a list of the nodes in a subtree of
+        the DOM. The nodes will be returned in document order.</p>
+    </li>
+    <li>
+      <h3>NodeList</h3>
+      <p>NodeList objects are collections of nodes, usually returned by properties such as Node.childNodes and
+        methods such as document.querySelectorAll().</p>
+    </li>
+    <li>
+      <h3>NonDocumentTypeChildNode</h3>
+      <p>The NonDocumentTypeChildNode interface contains methods that are particular to Node objects that can have a
+        parent, but not suitable for DocumentType.</p>
+    </li>
+    <li>
+      <h3>Notation </h3>
+      <p>Represents a DTD notation (read-only). May declare format of an unparsed entity or formally declare the
+        document's processing instruction targets. Inherits methods and properties from Node. Its nodeName is the
+        notation name. Has no parent.</p>
+    </li>
+    <li>
+      <h3>Notification</h3>
+      <p>The Notification interface of the Notifications API is used to configure and display desktop notifications
+        to the user.</p>
+    </li>
+    <li>
+      <h3>NotificationAction</h3>
+      <p>The NotificationAction interface of the Notifications API is used to represent action buttons the user can
+        click to interact with notifications.</p>
+    </li>
+    <li>
+      <h3>NotificationEvent </h3>
+      <p>The parameter passed into the onnotificationclick handler, the NotificationEvent interface represents a
+        notification click event that is dispatched on the ServiceWorkerGlobalScope of a ServiceWorker.</p>
+    </li>
+    <li>
+      <h3>NotifyAudioAvailableEvent </h3>
+      <p>The non-standard, obsolete, NotifyAudioAvailableEvent interface defines the event sent to audio
+        elements&nbsp; when the audio buffer is full.</p>
+    </li>
+  </ul>
+  <span>O</span>
+  <ul>
+    <li>
+      <h3>OES_element_index_uint</h3>
+      <p>The OES_element_index_uint extension is part of the WebGL API and adds support for gl.UNSIGNED_INT types to
+        WebGLRenderingContext.drawElements().</p>
+    </li>
+    <li>
+      <h3>OES_fbo_render_mipmap</h3>
+      <p>The OES_fbo_render_mipmap extension is part of the WebGL API and makes it possible to attach any level of a
+        texture to a framebuffer object.</p>
+    </li>
+    <li>
+      <h3>OES_standard_derivatives</h3>
+      <p>The OES_standard_derivatives extension is part of the WebGL API and adds the GLSL derivative functions
+        dFdx, dFdy, and fwidth.</p>
+    </li>
+    <li>
+      <h3>OES_texture_float</h3>
+      <p>The OES_texture_float extension is part of the WebGL API and exposes floating-point pixel types for
+        textures.</p>
+    </li>
+    <li>
+      <h3>OES_texture_float_linear</h3>
+      <p>The OES_texture_float_linear extension is part of the WebGL API and allows linear filtering with
+        floating-point pixel types for textures.</p>
+    </li>
+    <li>
+      <h3>OES_texture_half_float</h3>
+      <p>The OES_texture_half_float extension is part of the WebGL API and adds texture formats with 16- (aka half
+        float) and 32-bit floating-point components.</p>
+    </li>
+    <li>
+      <h3>OES_texture_half_float_linear</h3>
+      <p>The OES_texture_half_float_linear extension is part of the WebGL API and allows linear filtering with half
+        floating-point pixel types for textures.</p>
+    </li>
+    <li>
+      <h3>OES_vertex_array_object</h3>
+      <p>The OES_vertex_array_object extension is part of the WebGL API and provides vertex array objects (VAOs)
+        which encapsulate vertex array states. These objects keep pointers to vertex data and provide names for
+        different sets of vertex data.</p>
+    </li>
+    <li>
+      <h3>OVR_multiview2</h3>
+      <p>The OVR_multiview2 extension is part of the WebGL API and adds support for rendering into multiple views
+        simultaneously. This especially useful for virtual reality (VR) and WebXR.</p>
+    </li>
+    <li>
+      <h3>OfflineAudioCompletionEvent</h3>
+      <p>The Web Audio API OfflineAudioCompletionEvent interface represents events that occur when the processing of
+        an OfflineAudioContext is terminated. The complete event implements this interface.</p>
+    </li>
+    <li>
+      <h3>OfflineAudioContext</h3>
+      <p>The OfflineAudioContext interface is an AudioContext interface representing an audio-processing graph built
+        from linked together AudioNodes. In contrast with a standard AudioContext, an OfflineAudioContext doesn't
+        render the audio to the device hardware; instead, it generates it, as fast as it can, and outputs the result
+        to an AudioBuffer.</p>
+    </li>
+    <li>
+      <h3>OffscreenCanvas </h3>
+      <p>The OffscreenCanvas interface provides a canvas that can be rendered off screen. It is available in
+        both&nbsp;the window and&nbsp;worker contexts.</p>
+    </li>
+    <li>
+      <h3>OrientationSensor</h3>
+      <p>The OrientationSensor interface of the the Sensor APIs is the base class for orientation sensors. This
+        interface cannot be used directly. Instead it provides properties and methods accessed by interfaces that
+        inherit from it. </p>
+    </li>
+    <li>
+      <h3>OscillatorNode</h3>
+      <p>The OscillatorNode&nbsp;interface represents a periodic waveform, such as a sine wave. It is an
+        AudioScheduledSourceNode audio-processing module that causes a specified frequency&nbsp;of a given wave to
+        be created—in effect, a constant tone.</p>
+    </li>
+    <li>
+      <h3>OverconstrainedError</h3>
+      <p>The OverconstrainedError interface of the Media Capture and Streams API indicates that the set of desired
+        capabilities for the current MediaStreamTrack cannot currently be met. When this event is thrown on a
+        MediaStreamTrack, it is muted until either the current constraints can be established or until satisfiable
+        constraints are applied.</p>
+    </li>
+  </ul>
+  <span>P</span>
+  <ul>
+    <li>
+      <h3>PageTransitionEvent</h3>
+      <p>The PageTransitionEvent is fired when a document is being loaded or unloaded.</p>
+    </li>
+    <li>
+      <h3>PaintWorklet</h3>
+      <p>The PaintWorklet&nbsp;interface of the CSS Painting API programmatically generates an image where a CSS
+        property expects a file.&nbsp;Access this interface&nbsp;through CSS.paintWorklet.</p>
+    </li>
+    <li>
+      <h3>PannerNode</h3>
+      <p>A PannerNode always has exactly one input and one output: the input can be mono or stereo but the output is
+        always stereo (2 channels); you can't have panning effects without at least two audio channels!</p>
+    </li>
+    <li>
+      <h3>ParentNode</h3>
+      <p>The ParentNode mixin contains methods and properties that are common to all types of Node objects that can
+        have children.</p>
+    </li>
+    <li>
+      <h3>PasswordCredential</h3>
+      <p>The interface of the Credential Management API provides information about a username/password pair.&nbsp;In
+        supporting browsers an instance of this class may be passed in the credential member of the init object for
+        global fetch.</p>
+    </li>
+    <li>
+      <h3>Path2D</h3>
+      <p>The Path2D interface of the Canvas 2D API is used to declare a path that can then be used on a
+        CanvasRenderingContext2D object. The path methods of the CanvasRenderingContext2D interface are also present
+        on this interface, which gives you the convenience of being able to retain and replay your path whenever
+        desired.</p>
+    </li>
+    <li>
+      <h3>PayerErrors</h3>
+      <p>The PayerErrors&nbsp;dictionary is used by the Payment Request API to indicate the presence of—and to
+        explain how to correct—validation errors in the payer details.</p>
+    </li>
+    <li>
+      <h3>PaymentAddress</h3>
+      <p>The PaymentAddress interface of the&nbsp;Payment Request API is used to store shipping or payment address
+        information.</p>
+    </li>
+    <li>
+      <h3>PaymentCurrencyAmount</h3>
+      <p>The PaymentCurrencyAmount dictionary describes an amount of money in terms of both a number of units and
+        the currency (US dollars, Euro, yen, etc.), and is part of the Payment Request API.</p>
+    </li>
+    <li>
+      <h3>PaymentDetailsBase </h3>
+      <p>The PaymentDetailsBase dictionary is a mixin used by&nbsp;the&nbsp;PaymentDetailsInit
+        and&nbsp;PaymentDetailsUpdate dictionaries.</p>
+    </li>
+    <li>
+      <h3>PaymentDetailsUpdate</h3>
+      <p>The PaymentDetailsUpdate dictionary is used to provide updated information to the payment user interface
+        after it has been instantiated.</p>
+    </li>
+    <li>
+      <h3>PaymentItem</h3>
+      <p>The PaymentItem dictionary is used by the Payment Request API to describe a single line item on a payment
+        request.</p>
+    </li>
+    <li>
+      <h3>PaymentMethodChangeEvent</h3>
+      <p>The PaymentMethodChangeEvent interface of the Payment Request API describes the paymentmethodchange event
+        which is fired by some payment handlers when the user switches payment instruments (e.g., a user selects a
+        "store" card to make a purchase while using Apple Pay).</p>
+    </li>
+    <li>
+      <h3>PaymentRequest</h3>
+      <p>The&nbsp;Payment Request API's PaymentRequest interface the primary access point into the API, and lets web
+        content and apps accept payments from the end user on behalf of the operator of the site or the publisher of
+        the app.</p>
+    </li>
+    <li>
+      <h3>PaymentRequestEvent </h3>
+      <p>The PaymentRequestEvent interface of the the Payment Request API is the object passed to a payment handler
+        when a PaymentRequest is made.</p>
+    </li>
+    <li>
+      <h3>PaymentRequestUpdateEvent </h3>
+      <p>The PaymentRequestUpdateEvent interface is used for events sent to a PaymentRequest instance when changes
+        are made to shipping-related information for a pending PaymentRequest. Those events are:</p>
+    </li>
+    <li>
+      <h3>PaymentResponse </h3>
+      <p>The PaymentResponse interface of the&nbsp;Payment Request API&nbsp;is returned after a user selects a
+        payment method and approves a payment request.</p>
+    </li>
+    <li>
+      <h3>PaymentValidationErrors</h3>
+      <p>The PaymentValidationErrors dictionary represents objects providing information about any and all errors
+        that occurred while processing a payment request. When validation of the PaymentResponse returned by the
+        PaymentRequest.show() or PaymentResponse.retry() methods fails, your code creates a PaymentValidationErrors
+        object to pass into retry() so that the user agent knows what needs to be fixed and what if any error
+        messages to display to the user.</p>
+    </li>
+    <li>
+      <h3>Pbkdf2Params</h3>
+      <p>The Pbkdf2Params dictionary of the Web Crypto API represents the object that should be passed as the
+        algorithm parameter into SubtleCrypto.deriveKey(), when using the PBKDF2 algorithm.</p>
+    </li>
+    <li>
+      <h3>Performance</h3>
+      <p>The Performance interface provides access to performance-related information for the current page. It's
+        part of the High Resolution Time API, but is enhanced by the Performance Timeline API, the Navigation Timing
+        API, the User Timing API, and the Resource Timing API.</p>
+    </li>
+    <li>
+      <h3>PerformanceEntry</h3>
+      <p>The PerformanceEntry object encapsulates a single performance metric that is part of the performance
+        timeline. A performance entry can be directly created by making a performance mark or measure (for example
+        by calling the mark() method) at an explicit point in an application. Performance entries are also created
+        in indirect ways such as loading a resource (such as an image).</p>
+    </li>
+    <li>
+      <h3>PerformanceFrameTiming</h3>
+      <p>PerformanceFrameTiming&nbsp;is an abstract interface that provides frame timing data about the browser's
+        event loop.</p>
+    </li>
+    <li>
+      <h3>PerformanceLongTaskTiming</h3>
+      <p>The PerformanceLongTaskTiming interface of the the Long Tasks API reports instances of long tasks.</p>
+    </li>
+    <li>
+      <h3>PerformanceMark</h3>
+      <p>PerformanceMark&nbsp;is an abstract interface for PerformanceEntry objects with an entryType of "mark".
+        Entries of this type are created by calling performance.mark() to add a named DOMHighResTimeStamp (the mark)
+        to the browser's performance timeline.</p>
+    </li>
+    <li>
+      <h3>PerformanceMeasure</h3>
+      <p>PerformanceMeasure is an abstract interface for PerformanceEntry objects with an entryType of "measure".
+        Entries of this type are created by calling performance.measure() to add a named DOMHighResTimeStamp (the
+        measure) between two marks to the browser's performance timeline.</p>
+    </li>
+    <li>
+      <h3>PerformanceNavigation </h3>
+      <p>The legacy PerformanceNavigation interface represents information about how the navigation to the current
+        document was done.</p>
+    </li>
+    <li>
+      <h3>PerformanceNavigationTiming</h3>
+      <p>The PerformanceNavigationTiming interface provides methods and properties to store and retrieve metrics
+        regarding the browser's document navigation events. For example, this interface can be used to determine how
+        much time it takes to load or unload a document.</p>
+    </li>
+    <li>
+      <h3>PerformanceObserver</h3>
+      <p>The PerformanceObserver interface is used to observe performance measurement events and be notified of new
+        performance entries as they are recorded in the browser's performance timeline.</p>
+    </li>
+    <li>
+      <h3>PerformanceObserverEntryList</h3>
+      <p>The PerformanceObserverEntryList interface is a list of peformance events that were explicitly observed via
+        the observe() method.</p>
+    </li>
+    <li>
+      <h3>PerformancePaintTiming</h3>
+      <p>The PerformancePaintTiming interface of the Paint Timing provides timing information about "paint" (also
+        called "render") operations during web page construction. "Paint" refers to conversion of the render tree to
+        on-screen pixels.</p>
+    </li>
+    <li>
+      <h3>PerformanceResourceTiming</h3>
+      <p>The PerformanceResourceTiming interface enables retrieval and analysis of detailed network timing data
+        regarding the loading of an application's resources. An application can use the timing metrics to determine,
+        for example, the length of time it takes to fetch a specific resource, such as an XMLHttpRequest,
+        &lt;SVG&gt;, image, or script.</p>
+    </li>
+    <li>
+      <h3>PerformanceServerTiming</h3>
+      <p>The PerformanceServerTiming interface surfaces server metrics that are sent with the response in the
+        Server-Timing HTTP header.</p>
+    </li>
+    <li>
+      <h3>PerformanceTiming </h3>
+      <p>The PerformanceTiming interface is a legacy interface kept for backwards compatibility and contains
+        properties that offer performance timing information for various events which occur during the loading and
+        use of the current page. You get a PerformanceTiming object describing your page using the
+        window.performance.timing property.</p>
+    </li>
+    <li>
+      <h3>PeriodicWave</h3>
+      <p>PeriodicWave has no inputs or outputs; it is used to define custom oscillators when calling
+        OscillatorNode.setPeriodicWave(). The PeriodicWave itself is created/returned by
+        AudioContext.createPeriodicWave().</p>
+    </li>
+    <li>
+      <h3>PermissionStatus </h3>
+      <p>The PermissionStatus interface of the Permissions API provides the state of an object and an event handler
+        for monitoring changes to said state.</p>
+    </li>
+    <li>
+      <h3>Permissions </h3>
+      <p>The Permissions interface of the Permissions API provides the core Permission API functionality, such as
+        methods for querying and revoking permissions</p>
+    </li>
+    <li>
+      <h3>PhotoCapabilities </h3>
+      <p>The PhotoCapabilities interface of the the MediaStream Image Capture API provides available configuration
+        options for an attached photographic device. A PhotoCapabilities object is retrieved by calling
+        ImageCapture.getPhotoCapabilities().</p>
+    </li>
+    <li>
+      <h3>Plugin</h3>
+      <p>The Plugin interface provides information about a browser plugin.</p>
+    </li>
+    <li>
+      <h3>PluginArray </h3>
+      <p>The PluginArray interface is used to store a list of Plugin objects describing the available plugins; it's
+        returned by the window.navigator.plugins&nbsp;property. The PluginArray is not a JavaScript array, but has
+        the length property and supports accessing individual items using bracket notation (plugins[2]), as well as
+        via item(index) and namedItem("name") methods.</p>
+    </li>
+    <li>
+      <h3>Point </h3>
+      <p>Point is an interface, which existed only briefly in the CSS Transforms Level&nbsp;1 specification, which
+        represents a point in 2-dimensional space. It is non-standard, not broadly compatible, and should not be
+        used.</p>
+    </li>
+    <li>
+      <h3>PointerEvent</h3>
+      <p>The PointerEvent interface represents the state of a DOM event produced by a pointer such as the geometry
+        of the contact point, the device type that generated the event, the amount of pressure that was applied on
+        the contact surface, etc.</p>
+    </li>
+    <li>
+      <h3>PopStateEvent</h3>
+      <p>PopStateEvent is an event handler for the popstate event on the window.</p>
+    </li>
+    <li>
+      <h3>PositionOptions</h3>
+      <p>The PositionOptions dictionary describes an object containing option properties to pass as a parameter of
+        Geolocation.getCurrentPosition() and Geolocation.watchPosition().</p>
+    </li>
+    <li>
+      <h3>PositionSensorVRDevice </h3>
+      <p>The PositionSensorVRDevice interface of the WebVR API represents VR hardware's position sensor. You can
+        access information such as the current position and orientation of the sensor in relation to the head
+        mounted display through the PositionSensorVRDevice.getState() method.</p>
+    </li>
+    <li>
+      <h3>Presentation </h3>
+      <p>The Presentation can be defined as two possible user agents in the context: Controlling user agent and
+        Receiving user agent.</p>
+    </li>
+    <li>
+      <h3>PresentationAvailability </h3>
+      <p>A PresentationAvailability object is associated with available presentation displays and represents the
+        presentation display availability for a presentation request. If the controlling user agent can monitor the
+        list of available presentation displays in the background (without a pending request to start()), the
+        PresentationAvailability object MUST be implemented in a controlling browsing context.</p>
+    </li>
+    <li>
+      <h3>PresentationConnection </h3>
+      <p>The PresentationConnection interface of the&nbsp;Presentation API&nbsp;provides methods and properties for
+        managing a single presentation. Each presentation connection is represented by a PresentationConnection
+        object. Both the controlling user agent and receiving user agent MUST implement PresentationConnection.</p>
+    </li>
+    <li>
+      <h3>PresentationConnectionAvailableEvent </h3>
+      <p>The PresentationConnectionAvailableEvent interface of the&nbsp;Presentation API&nbsp;is fired on a
+        PresentationRequest&nbsp;when a connection associated with the object is created.</p>
+    </li>
+    <li>
+      <h3>PresentationConnectionCloseEvent </h3>
+      <p>The PresentationConnectionCloseEvent interface of the&nbsp;Presentation API&nbsp;is fired on a
+        PresentationConnection&nbsp;when it is closed.</p>
+    </li>
+    <li>
+      <h3>PresentationConnectionList </h3>
+      <p>PresentationConnectionList&nbsp;is the collection of incoming presentation connections.</p>
+    </li>
+    <li>
+      <h3>PresentationReceiver </h3>
+      <p>The PresentationReceiver interface of the the Presentation API provides a means for a receiving browsing
+        context to access controlling browsing contexts and communicate with them.</p>
+    </li>
+    <li>
+      <h3>PresentationRequest </h3>
+      <p>A PresentationRequest object is used to initiate or reconnect to a presentation made by a controlling
+        browsing context. The PresentationRequest object MUST be implemented in a controlling browsing context
+        provided by a controlling user agent.</p>
+    </li>
+    <li>
+      <h3>ProcessingInstruction</h3>
+      <p>The ProcessingInstruction interface represents a processing instruction; that is, a Node which embeds an
+        instruction targeting a specific application but that can be ignored by any other applications which don't
+        recognize the instruction.</p>
+    </li>
+    <li>
+      <h3>ProgressEvent</h3>
+      <p>The ProgressEvent interface represents events measuring progress of an underlying process, like an HTTP
+        request (for an XMLHttpRequest, or the loading of the underlying resource of an &lt;img&gt;, &lt;audio&gt;,
+        &lt;video&gt;, &lt;style&gt; or &lt;link&gt;).</p>
+    </li>
+    <li>
+      <h3>PromiseRejectionEvent</h3>
+      <p>The PromiseRejectionEvent interface represents events which are sent to the global script context when
+        JavaScript Promises are rejected.</p>
+    </li>
+    <li>
+      <h3>PublicKeyCredential</h3>
+      <p>The PublicKeyCredential interface provides information about a public key / private key pair, which is
+        a&nbsp;credential for logging in to a service using an un-phishable and data-breach resistant asymmetric key
+        pair instead of a password. It inherits from Credential, and was created by the Web Authentication API
+        extension to the Credential Management API. Other interfaces that inherit from Credential are
+        PasswordCredential and FederatedCredential.</p>
+    </li>
+    <li>
+      <h3>PublicKeyCredentialCreationOptions</h3>
+      <p>The PublicKeyCredentialCreationOptions dictionary of the Web Authentication API holds options passed to
+        navigators.credentials.create() in order to create a PublicKeyCredential.</p>
+    </li>
+    <li>
+      <h3>PublicKeyCredentialRequestOptions</h3>
+      <p>The PublicKeyCredentialRequestOptions dictionary of the Web Authentication API holds the options passed to
+        navigator.credentials.get() in order to fetch a given PublicKeyCredential.</p>
+    </li>
+    <li>
+      <h3>PushEvent</h3>
+      <p>The PushEvent interface of the Push API represents a push message that has been received. This event is
+        sent to the global scope of a ServiceWorker. It contains the information sent from an application server to
+        a PushSubscription.</p>
+    </li>
+    <li>
+      <h3>PushManager </h3>
+      <p>The PushManager interface of the Push API provides a way to receive notifications from third-party servers
+        as well as request URLs for push notifications.</p>
+    </li>
+    <li>
+      <h3>PushMessageData </h3>
+      <p>The PushMessageData interface of the Push API provides methods which let you retrieve the push data sent by
+        a server in various formats.</p>
+    </li>
+    <li>
+      <h3>PushRegistrationManager </h3>
+      <p>Returns an interface to register or unregister a push registration, get an active registration, or check
+        the permission status of the registration. This interface has been superceded by PushManager.</p>
+    </li>
+    <li>
+      <h3>PushSubscription </h3>
+      <p>The PushSubscription interface of the Push API provides a subcription's URL endpoint and allows
+        unsubscription from a push service.</p>
+    </li>
+  </ul>
+
+
+  <span>R</span>
+  <ul>
+    <li>
+      <h3>RTCAnswerOptions</h3>
+      <p>The RTCAnswerOptions dictionary is used to provide optional settings when creating an SDP answer
+        using&nbsp;RTCPeerConnection.createOffer() after receiving an offer from a remote peer.</p>
+    </li>
+    <li>
+      <h3>RTCCertificate</h3>
+      <p>The interface of the the WebRTC API provides an object represents a certificate that an
+        RTCPeerConnection&nbsp;uses to authenticate.</p>
+    </li>
+    <li>
+      <h3>RTCConfiguration</h3>
+      <p>The RTCConfiguration dictionary is used to provide configuration options for an RTCPeerConnection. It may
+        be passed into the constructor when instantiating a connection, or used with the
+        RTCPeerConnection.getConfiguration() and RTCPeerConnection.setConfiguration() methods, which allow
+        inspecting and changing the configuration while a connection is established.</p>
+    </li>
+    <li>
+      <h3>RTCDTMFSender</h3>
+      <p>Listen to these events using addEventListener() or by assigning an event listener to the oneventname
+        property of this interface.</p>
+    </li>
+    <li>
+      <h3>RTCDTMFToneChangeEvent</h3>
+      <p>The RTCDTMFToneChangeEvent interface represents events sent to indicate that DTMF tones have started or
+        finished playing. This interface is used by the tonechange event.</p>
+    </li>
+    <li>
+      <h3>RTCDataChannel </h3>
+      <p>The RTCDataChannel interface represents a network channel which can be used for bidirectional peer-to-peer
+        transfers of arbitrary data. Every data channel is associated with an RTCPeerConnection, and each peer
+        connection can have up to a theoretical maximum of 65,534 data channels (the actual limit may vary from
+        browser to browser).</p>
+    </li>
+    <li>
+      <h3>RTCDataChannelEvent </h3>
+      <p>The RTCDataChannelEvent() constructor returns a new RTCDataChannelEvent object, which represents a
+        datachannel event. These events sent to an RTCPeerConnection when its remote peer is asking to open an
+        RTCDataChannel between the two peers.</p>
+    </li>
+    <li>
+      <h3>RTCDtlsTransport </h3>
+      <p>The RTCDtlsTransport interface provides information which describes a Datagram Transport Layer Security
+        (DTLS) transport.</p>
+    </li>
+    <li>
+      <h3>RTCIceCandidate</h3>
+      <p>The RTCIceCandidate interface—part of the WebRTC API—represents a candidate Internet Connectivity
+        Establishment (ICE) configuration which may be used to establish an RTCPeerConnection.</p>
+    </li>
+    <li>
+      <h3>RTCIceCandidateInit</h3>
+      <p>The WebRTC API's RTCIceCandidateInit dictionary, which contains the information needed to fundamentally
+        describe an RTCIceCandidate.</p>
+    </li>
+    <li>
+      <h3>RTCIceCandidatePair</h3>
+      <p>The RTCIceCandidatePair dictionary describes a pair of ICE candidates which together comprise a description
+        of a viable connection between two WebRTC endpoints.</p>
+    </li>
+    <li>
+      <h3>RTCIceCandidatePairStats</h3>
+      <p>The WebRTC RTCIceCandidatePairStats dictionary reports statistics which provide insight into the quality
+        and performance of an RTCPeerConnection while connected and configured as described by the specified pair of
+        ICE candidates.</p>
+    </li>
+    <li>
+      <h3>RTCIceCandidateStats</h3>
+      <p>The WebRTC API's RTCIceCandidateStats dictionary provides statistics related to an RTCIceCandidate.</p>
+    </li>
+    <li>
+      <h3>RTCIceCandidateType</h3>
+      <p>The WebRTC API's RTCIceCandidateType enumerated type provides a set of DOMString values representing the
+        types of ICE candidate that can arrive.</p>
+    </li>
+    <li>
+      <h3>RTCIceComponent</h3>
+      <p>The WebRTC API's RTCIceComponent enumerated type contains DOMString values that each identify a specific
+        ICE component; these are "rtp" and "rtcp".</p>
+    </li>
+    <li>
+      <h3>RTCIceCredentialType</h3>
+      <p>The WebRTC API's RTCIceCredentialType enumerated string type defines the authentication method used to gain
+        access to an ICE server identified by an RTCIceServer object.</p>
+    </li>
+    <li>
+      <h3>RTCIceGathererState</h3>
+      <p>The RTCIceGathererState enumerated type provides the string values which can be returned by an
+        RTCIceTransport object's gatheringState.</p>
+    </li>
+    <li>
+      <h3>RTCIceParameters</h3>
+      <p>The RTCIceParameters dictionary specifies the username fragment and password assigned to an ICE session.
+      </p>
+    </li>
+    <li>
+      <h3>RTCIceProtocol</h3>
+      <p>The WebRTC API's RTCIceProtocol enumerated type provides a set of DOMString values representing the names
+        of the transport protocols ICE candidates can use.</p>
+    </li>
+    <li>
+      <h3>RTCIceRole</h3>
+      <p>The RTCIceRole enumerated type lists the string values that identify whether a connection's ICE agent is
+        serving as the controlling agent or the controlled agent, as indicated by RTCIceTransport.role.</p>
+    </li>
+    <li>
+      <h3>RTCIceServer </h3>
+      <p>The RTCIceServer dictionary defines how to connect to a single ICE server (such as a STUN or TURN server).
+        It includes both the URL and the necessary credentials, if any, to connect to the server.</p>
+    </li>
+    <li>
+      <h3>RTCIceTcpCandidateType</h3>
+      <p>The WebRTC API's RTCIceTcpCandidateType enumerated type provides a set of DOMString values representing the
+        types of TCP candidates.</p>
+    </li>
+    <li>
+      <h3>RTCIceTransport</h3>
+      <p>The RTCIceTransport interface provides access to information about the ICE transport layer over which the
+        data is being sent and received.</p>
+    </li>
+    <li>
+      <h3>RTCIceTransportState</h3>
+      <p>The RTCIceTransportState enumerated type defines the string values which may be returned by the state
+        property on RTCIceTransport objects. The transport state indicates which stage of the candidate gathering
+        process is currently underway.</p>
+    </li>
+    <li>
+      <h3>RTCIdentityAssertion </h3>
+      <p>The RTCIdentityAssertion&nbsp;interface of the the WebRTC API&nbsp;represents the identity of the a remote
+        peer of the current connection. If no peer has yet been set and verified this interface returns null. Once
+        set it can't be changed.</p>
+    </li>
+    <li>
+      <h3>RTCIdentityErrorEvent </h3>
+      <p>The RTCIdentityErrorEvent interface represents an error associated with the identity provider (idP). This
+        is usually for an&nbsp;RTCPeerConnection.&nbsp;Two events are sent with this type: idpassertionerror and
+        idpvalidationerror.</p>
+    </li>
+    <li>
+      <h3>RTCIdentityEvent </h3>
+      <p>The RTCIdentityEvent interface represents an identity assertion&nbsp;generated by an identity provider
+        (idP). This is usually for an RTCPeerConnection.&nbsp;The only event sent with this type is identityresult..
+      </p>
+    </li>
+    <li>
+      <h3>RTCInboundRtpStreamStats</h3>
+      <p>The WebRTC API's RTCInboundRtpStreamStats dictionary, based upon RTCReceivedRtpStreamStats and RTCStats,
+        contains statistics related to the receiving end of an RTP stream on the local end of the RTCPeerConnection.
+      </p>
+    </li>
+    <li>
+      <h3>RTCNetworkType</h3>
+      <p>The WebRTC RTCNetworkType enumerated type defines a set of strings used to identify the type of network
+        used by a connection between two peers.</p>
+    </li>
+    <li>
+      <h3>RTCOfferAnswerOptions</h3>
+      <p>The WebRTC API's RTCOfferAnswerOptions dictionary is used to specify options that configure and control the
+        process of creating WebRTC offers or answers.</p>
+    </li>
+    <li>
+      <h3>RTCOfferOptions</h3>
+      <p>The RTCOfferOptions dictionary is used to provide optional settings when creating an RTCPeerConnection
+        offer with the createOffer() method.</p>
+    </li>
+    <li>
+      <h3>RTCOutboundRtpStreamStats</h3>
+      <p>The RTCOutboundRtpStreamStats dictionary is the RTCStats-based object which provides metrics and statistics
+        related to an outbound RTP stream being sent by an RTCRtpSender.</p>
+    </li>
+    <li>
+      <h3>RTCPeerConnection</h3>
+      <p>The RTCPeerConnection interface represents a WebRTC connection between the local computer and a remote
+        peer. It provides methods to connect to a remote peer, maintain and monitor the connection, and close the
+        connection once it's no longer needed.</p>
+    </li>
+    <li>
+      <h3>RTCPeerConnectionIceEvent </h3>
+      <p>The RTCPeerConnectionIceEvent interface represents events that occurs in relation to ICE candidates with
+        the target, usually an RTCPeerConnection.</p>
+    </li>
+    <li>
+      <h3>RTCRtpCodecParameters</h3>
+      <p>The RTCRtpCodecParameters dictionary, part of the WebRTC API, is used to describe the configuration
+        parameters for a single media codec.</p>
+    </li>
+    <li>
+      <h3>RTCRtpContributingSource</h3>
+      <p>The RTCRtpContributingSource dictionary of the the WebRTC API is used by getContributingSources() to
+        provide information&nbsp;about a given contributing source (CSRC), including the most recent time a packet
+        that the source contributed was played out.</p>
+    </li>
+    <li>
+      <h3>RTCRtpEncodingParameters</h3>
+      <p>An instance of the WebRTC API's RTCRtpEncodingParameters dictionary describes a single configuration of a
+        codec for an RTCRtpSender.</p>
+    </li>
+    <li>
+      <h3>RTCRtpReceiver</h3>
+      <p>The RTCRtpReceiver interface of the WebRTC API&nbsp;manages the reception and decoding of data for
+        a&nbsp;MediaStreamTrack on an&nbsp;RTCPeerConnection.</p>
+    </li>
+    <li>
+      <h3>RTCRtpSendParameters</h3>
+      <p>The WebRTC API's RTCRtpSendParameters dictionary is used to specify the parameters for an RTCRtpSender when
+        calling its setParameters() method.</p>
+    </li>
+    <li>
+      <h3>RTCRtpSender</h3>
+      <p>The RTCRtpSender interface provides the ability to control and obtain details about how a particular
+        MediaStreamTrack is encoded and sent to a remote peer.</p>
+    </li>
+    <li>
+      <h3>RTCRtpStreamStats</h3>
+      <p>The RTCRtpStreamStats dictionary is returned by the RTCPeerConnection.getStats(), RTCRtpSender.getStats(),
+        and RTCRtpReceiver.getStats() methods to provide detailed statistics about WebRTC connectivity.</p>
+    </li>
+    <li>
+      <h3>RTCRtpSynchronizationSource</h3>
+      <p>The RTCRtpSynchronizationSource dictionary of the the WebRTC API is used by getSynchronizationSources() to
+        describe a particular synchronization source (SSRC).</p>
+    </li>
+    <li>
+      <h3>RTCRtpTransceiver</h3>
+      <p>The WebRTC interface RTCRtpTransceiver describes a permanent pairing of an RTCRtpSender and an
+        RTCRtpReceiver, along with some shared state.</p>
+    </li>
+    <li>
+      <h3>RTCRtpTransceiverDirection</h3>
+      <p>The RTCRtpTransceiverDirection type is an enumerated set of strings which are used to describe the
+        directionality of a RTCRtpTransceiver instance.</p>
+    </li>
+    <li>
+      <h3>RTCRtpTransceiverInit</h3>
+      <p>The RTCRtpTransceiverInit dictionary is used when calling the WebRTC function
+        RTCPeerConnection.addTransceiver() to provide configuration options for the new transceiver.</p>
+    </li>
+    <li>
+      <h3>RTCSctpTransport </h3>
+      <p>The RTCSctpTransport interface provides information which describes a Stream Control Transmission Protocol
+        (SCTP) transport. This provides information about limitations of the transport, but also provides a way to
+        access the underlying Datagram Transport Layer Security (DTLS) transport over which SCTP packets for all of
+        an RTCPeerConnection's data channels are sent and received.</p>
+    </li>
+    <li>
+      <h3>RTCSessionDescription </h3>
+      <p>The RTCSessionDescription interface describes one end of a connection—or potential connection—and how it's
+        configured. Each RTCSessionDescription consists of a description type indicating which part of the
+        offer/answer negotiation process it describes and of the SDP descriptor of the session.</p>
+    </li>
+    <li>
+      <h3>RTCSessionDescriptionCallback </h3>
+      <p>The RTCSessionDescriptionCallback type is used to represent the callback function passed into the
+        deprecated callback-based version of createOffer() or createAnswer() when using them to create offers or
+        answers.</p>
+    </li>
+    <li>
+      <h3>RTCStats</h3>
+      <p>The RTCStats dictionary is the basic statistics object used by WebRTC's statistics monitoring model,
+        providing the properties required of all statistics data objects.</p>
+    </li>
+    <li>
+      <h3>RTCStatsIceCandidatePairState</h3>
+      <p>The RTCStatsIceCandidatePairState enumerated type represents the set of string values which are possible
+        for the RTCIceCandidatePairStats object's state property.</p>
+    </li>
+    <li>
+      <h3>RTCStatsReport</h3>
+      <p>The RTCStatsReport dictionary is contains statistics data about WebRTC connections as returned by the
+        RTCPeerConnection.getStats(), RTCRtpReceiver.getStats(), and RTCRtpSender.getStats() methods.</p>
+    </li>
+    <li>
+      <h3>RTCStatsType</h3>
+      <p>The RTCStatsType enumerated type (enum) is a set of strings which define the type of statistics reported in
+        an RTCStats object.</p>
+    </li>
+    <li>
+      <h3>RTCTrackEvent</h3>
+      <p>The WebRTC API interface RTCTrackEvent represents the track event, which is sent when a new
+        MediaStreamTrack is added to an RTCRtpReceiver which is part of the RTCPeerConnection.</p>
+    </li>
+    <li>
+      <h3>RTCTrackEventInit</h3>
+      <p>The WebRTC API's RTCTrackEventInit dictionary is used to provide information describing an RTCTrackEvent
+        when instantiating a new track event using new RTCTrackEvent().</p>
+    </li>
+    <li>
+      <h3>RadioNodeList</h3>
+      <p>The RadioNodeList interface represents a collection of radio elements in a &lt;form&gt; or a
+        &lt;fieldset&gt; element.</p>
+    </li>
+    <li>
+      <h3>Range</h3>
+      <p>The Range interface represents a fragment of a document that can contain nodes and parts of text nodes.</p>
+    </li>
+    <li>
+      <h3>ReadableByteStreamController </h3>
+      <p>The ReadableByteStreamController interface of the&nbsp;Streams API represents a controller allowing control
+        of a&nbsp;ReadableStream's state and internal queue. Byte stream controllers are for byte streams.</p>
+    </li>
+    <li>
+      <h3>ReadableStream</h3>
+      <p>The ReadableStream interface of the&nbsp;Streams API&nbsp;represents a readable stream of byte data. The
+        Fetch API offers a concrete instance of a ReadableStream through the body property of a Response object.</p>
+    </li>
+    <li>
+      <h3>ReadableStreamBYOBReader </h3>
+      <p>The ReadableStreamBYOBReader interface of the Streams API represents a BYOB ("bring your own buffer")
+        reader that can be used to read stream data supplied by the developer (e.g. a custom ReadableStream()
+        constructor).</p>
+    </li>
+    <li>
+      <h3>ReadableStreamBYOBRequest </h3>
+      <p>The ReadableStreamBYOBRequest interface of the&nbsp;Streams API represents a pull request into a
+        ReadableByteStreamController view.</p>
+    </li>
+    <li>
+      <h3>ReadableStreamDefaultController</h3>
+      <p>The ReadableStreamDefaultController interface of the&nbsp;Streams API represents a controller allowing
+        control of a&nbsp;ReadableStream's state and internal queue. Default controllers are for streams that are
+        not byte streams.&nbsp;</p>
+    </li>
+    <li>
+      <h3>ReadableStreamDefaultReader</h3>
+      <p>The ReadableStreamDefaultReader interface of the&nbsp;Streams API represents a default reader that can be
+        used to read stream data supplied from a network (e.g. a fetch request).&nbsp;</p>
+    </li>
+    <li>
+      <h3>RelativeOrientationSensor</h3>
+      <p>The RelativeOrientationSensor interface of the the Sensor APIs describes the device's physical orientation
+        without regard to the Earth's reference coordinate system. </p>
+    </li>
+    <li>
+      <h3>RenderingContext</h3>
+      <p>RenderingContext is a WebIDL typedef which can refer to any one of the interfaces that represent a graphics
+        rendering context within a &lt;canvas&gt; element: CanvasRenderingContext2D, WebGLRenderingContext, or
+        WebGL2RenderingContext.</p>
+    </li>
+    <li>
+      <h3>Report </h3>
+      <p>The Report interface of the Reporting API represents a single report.</p>
+    </li>
+    <li>
+      <h3>ReportingObserver </h3>
+      <p>The ReportingObserver interface of the Reporting API allows you to collect and access reports.</p>
+    </li>
+    <li>
+      <h3>ReportingObserverOptions </h3>
+      <p>The ReportingObserverOptions dictionary of the Reporting API allows options to be set in the constructor
+        when creating a ReportingObserver.</p>
+    </li>
+    <li>
+      <h3>Request</h3>
+      <p>The Request interface of the Fetch API represents a resource request.</p>
+    </li>
+    <li>
+      <h3>RequestDestination</h3>
+      <p>The RequestDestination enumerated type contains the permitted values for a request's destination. These
+        string values indicate potential types of content that a request may try to retrieve.</p>
+    </li>
+    <li>
+      <h3>ResizeObserver </h3>
+      <p>The ResizeObserver interface reports changes to the dimensions of an Element's content or border box, or
+        the bounding box of an SVGElement.</p>
+    </li>
+    <li>
+      <h3>ResizeObserverEntry</h3>
+      <p>The ResizeObserverEntry interface represents the object passed to the ResizeObserver() constructor's
+        callback function, which allows you to access the new dimensions of the Element or SVGElement being
+        observed.</p>
+    </li>
+    <li>
+      <h3>Response </h3>
+      <p>The Response interface of the Fetch API represents the response to a request.</p>
+    </li>
+    <li>
+      <h3>RsaHashedImportParams</h3>
+      <p>The RsaHashedImportParams dictionary of the Web Crypto API represents the object that should be passed as
+        the algorithm parameter into SubtleCrypto.importKey() or SubtleCrypto.unwrapKey(), when importing any
+        RSA-based key pair: that is, when the algorithm is identified as any of RSASSA-PKCS1-v1_5, RSA-PSS,
+        or&nbsp;RSA-OAEP.</p>
+    </li>
+    <li>
+      <h3>RsaHashedKeyGenParams</h3>
+      <p>The RsaHashedKeyGenParams dictionary of the Web Crypto API represents the object that should be passed as
+        the algorithm parameter into SubtleCrypto.generateKey(), when generating any RSA-based key pair: that is,
+        when the algorithm is identified as any of RSASSA-PKCS1-v1_5, RSA-PSS, or&nbsp;RSA-OAEP.</p>
+    </li>
+    <li>
+      <h3>RsaOaepParams</h3>
+      <p>The RsaOaepParams dictionary of the Web Crypto API represents the object that should be passed as the
+        algorithm parameter into SubtleCrypto.encrypt(), SubtleCrypto.decrypt(),&nbsp;SubtleCrypto.wrapKey(), or
+        SubtleCrypto.unwrapKey(), when using the RSA_OAEP algorithm.</p>
+    </li>
+    <li>
+      <h3>RsaPssParams</h3>
+      <p>The RsaPssParams dictionary of the Web Crypto API represents the object that should be passed as the
+        algorithm parameter into SubtleCrypto.sign() or SubtleCrypto.verify(), when using the RSA-PSS algorithm.</p>
+    </li>
+  </ul>
+  <span>S</span>
+  <ul>
+    <li>
+      <h3>SVGAElement</h3>
+      <p>The SVGAElement interface provides access to the properties of &lt;a&gt; element, as well as methods to
+        manipulate them.</p>
+    </li>
+    <li>
+      <h3>SVGAltGlyphDefElement </h3>
+      <p>The SVGAltGlyphDefElement interface corresponds to the &lt;altGlyphDef&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGAltGlyphElement </h3>
+      <p>The SVGAltGlyphElement interface represents an &lt;altglyph&gt; element. This interface makes it possible
+        to implement more sophisticated and particular glyph characters. For some textal representations as:
+        ligatures (e.g. æ, ß, etc ), special-purpose fonts (e.g. musical symbols) or even alternate glyphs such as
+        Asian text strings it is required that a different set of glyphs be used than the normal given character
+        data.</p>
+    </li>
+    <li>
+      <h3>SVGAltGlyphItemElement </h3>
+      <p>The SVGAltGlyphItemElement interface corresponds to the &lt;altGlyphItem&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGAngle</h3>
+      <p>The SVGAngle interface is used to represent a value that can be an &lt;angle&gt; or &lt;number&gt; value.
+        An SVGAngle reflected through the animVal attribute is always read only.</p>
+    </li>
+    <li>
+      <h3>SVGAnimateColorElement </h3>
+      <p>The SVGAnimateColorElement interface corresponds to the &lt;animateColor&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGAnimateElement</h3>
+      <p>The SVGAnimateElement interface corresponds to the &lt;animate&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGAnimateMotionElement</h3>
+      <p>The SVGAnimateMotionElement interface corresponds to the &lt;animateMotion&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGAnimateTransformElement</h3>
+      <p>The SVGAnimateTransformElement interface corresponds to the &lt;animateTransform&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGAnimatedAngle</h3>
+      <p>The SVGAnimatedAngle interface is used for attributes of basic type &lt;angle&gt; which can be animated.
+      </p>
+    </li>
+    <li>
+      <h3>SVGAnimatedBoolean</h3>
+      <p>The SVGAnimatedBoolean interface is used for attributes of type boolean which can be animated.</p>
+    </li>
+    <li>
+      <h3>SVGAnimatedEnumeration</h3>
+      <p>The SVGAnimatedEnumeration interface is used for attributes whose value must be a constant from a
+        particular enumeration and which can be animated.</p>
+    </li>
+    <li>
+      <h3>SVGAnimatedInteger</h3>
+      <p>The SVGAnimatedInteger interface is used for attributes of basic type &lt;integer&gt; which can be
+        animated.</p>
+    </li>
+    <li>
+      <h3>SVGAnimatedLength</h3>
+      <p>The SVGAnimatedLength interface is used for attributes of basic type &lt;length&gt; which can be animated.
+      </p>
+    </li>
+    <li>
+      <h3>SVGAnimatedLengthList</h3>
+      <p>The SVGAnimatedLengthList interface is used for attributes of type SVGLengthList which can be animated.</p>
+    </li>
+    <li>
+      <h3>SVGAnimatedNumber</h3>
+      <p>The SVGAnimatedNumber interface is used for attributes of basic type &lt;Number&gt; which can be animated.
+      </p>
+    </li>
+    <li>
+      <h3>SVGAnimatedNumberList</h3>
+      <p>The SVGAnimatedNumber interface is used for attributes which take a list of numbers and which can be
+        animated.</p>
+    </li>
+    <li>
+      <h3>SVGAnimatedPoints</h3>
+      <p>The SVGAnimatedPoints interface supports elements which have a points attribute which holds a list of
+        coordinate values and which support the ability to animate that attribute.</p>
+    </li>
+    <li>
+      <h3>SVGAnimatedPreserveAspectRatio</h3>
+      <p>The SVGAnimatedPreserveAspectRatio interface is used for attributes of type SVGPreserveAspectRatio which
+        can be animated.</p>
+    </li>
+    <li>
+      <h3>SVGAnimatedRect</h3>
+      <p>The SVGAnimatedRect interface is used for attributes of basic SVGRect which can be animated.</p>
+    </li>
+    <li>
+      <h3>SVGAnimatedString</h3>
+      <p>The SVGAnimatedString&nbsp;interface represents string attributes which can be animated from each SVG
+        declaration. You need to create SVG attribute before doing anything else, everything should be
+        declared&nbsp;inside this.</p>
+    </li>
+    <li>
+      <h3>SVGAnimatedTransformList</h3>
+      <p>The SVGAnimatedTransformList interface is used for attributes which take a list of numbers and which can be
+        animated.</p>
+    </li>
+    <li>
+      <h3>SVGAnimationElement</h3>
+      <p>The SVGAnimationElement interface is the base interface for all of the animation element interfaces:
+        SVGAnimateElement, SVGSetElement, SVGAnimateColorElement, SVGAnimateMotionElement and
+        SVGAnimateTransformElement.</p>
+    </li>
+    <li>
+      <h3>SVGCircleElement</h3>
+      <p>The SVGCircleElement interface is an interface for the &lt;circle&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGClipPathElement</h3>
+      <p>The SVGClipPathElement interface provides access to the properties of &lt;clipPath&gt; elements, as well as
+        methods to manipulate them.</p>
+    </li>
+    <li>
+      <h3>SVGColorProfileElement </h3>
+      <p>The SVGColorProfileElement interface corresponds to the &lt;color-profile&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGComponentTransferFunctionElement</h3>
+      <p>The SVGComponentTransferFunctionElement interface defines a base interface used by the component transfer
+        function interfaces.</p>
+    </li>
+    <li>
+      <h3>SVGCursorElement</h3>
+      <p>The SVGCursorElement interface provides access to the properties of &lt;cursor&gt; elements, as well as
+        methods to manipulate them.</p>
+    </li>
+    <li>
+      <h3>SVGDefsElement</h3>
+      <p>The SVGDefsElement interface corresponds to the &lt;defs&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGDescElement</h3>
+      <p>The SVGDescElement interface corresponds to the &lt;desc&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGElement</h3>
+      <p>All of the SVG DOM interfaces that correspond directly to elements in the SVG language derive from the
+        SVGElement interface.</p>
+    </li>
+    <li>
+      <h3>SVGEllipseElement</h3>
+      <p>The SVGEllipseElement interface provides access to the properties of &lt;ellipse&gt; elements.</p>
+    </li>
+    <li>
+      <h3>SVGEvent</h3>
+      <p>The SVGEvent interface represents the event object for most SVG-related events.</p>
+    </li>
+    <li>
+      <h3>SVGExternalResourcesRequired </h3>
+      <p>The SVGExternalResourcesRequired interface defines an interface which applies to all elements where this
+        element or one of its descendants can reference an external resource.</p>
+    </li>
+    <li>
+      <h3>SVGFEBlendElement</h3>
+      <p>The SVGFEBlendElement interface corresponds to the &lt;feBlend&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGFEColorMatrixElement</h3>
+      <p>The SVGFEColorMatrixElement interface corresponds to the &lt;feColorMatrix&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGFEComponentTransferElement</h3>
+      <p>The SVGFEComponentTransferElement interface corresponds to the &lt;feComponentTransfer&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGFECompositeElement</h3>
+      <p>The SVGFECompositeElement interface corresponds to the &lt;feComposite&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGFEConvolveMatrixElement</h3>
+      <p>The SVGFEConvolveMatrixElement interface corresponds to the &lt;feConvolveMatrix&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGFEDiffuseLightingElement</h3>
+      <p>The SVGFEDiffuseLightingElement interface corresponds to the &lt;feDiffuseLighting&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGFEDisplacementMapElement</h3>
+      <p>The SVGFEDisplacementMapElement interface corresponds to the &lt;feDisplacementMap&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGFEDistantLightElement</h3>
+      <p>The SVGFEDistantLightElement interface corresponds to the &lt;feDistantLight&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGFEDropShadowElement</h3>
+      <p>The SVGFEDropShadowElement interface corresponds to the &lt;feDropShadow&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGFEFloodElement</h3>
+      <p>The SVGFEFloodElement interface corresponds to the &lt;feFlood&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGFEFuncAElement</h3>
+      <p>The SVGFEFuncAElement interface corresponds to the &lt;feFuncA&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGFEFuncBElement</h3>
+      <p>The SVGFEFuncBElement interface corresponds to the &lt;feFuncB&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGFEFuncGElement</h3>
+      <p>The SVGFEFuncGElement interface corresponds to the &lt;feFuncG&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGFEFuncRElement</h3>
+      <p>The SVGFEFuncRElement interface corresponds to the &lt;feFuncR&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGFEGaussianBlurElement</h3>
+      <p>The SVGFEGaussianBlurElement interface corresponds to the &lt;feGaussianBlur&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGFEImageElement</h3>
+      <p>The SVGFEImageElement interface corresponds to the &lt;feImage&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGFEMergeElement</h3>
+      <p>The SVGFEMergeElement interface corresponds to the &lt;feMerge&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGFEMergeNodeElement</h3>
+      <p>The SVGFEMergeNodeElement interface corresponds to the &lt;feMergeNode&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGFEMorphologyElement</h3>
+      <p>The SVGFEMorphologyElement interface corresponds to the &lt;feMorphology&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGFEOffsetElement</h3>
+      <p>The SVGFEOffsetElement interface corresponds to the &lt;feOffset&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGFEPointLightElement</h3>
+      <p>The SVGFEPointLightElement interface corresponds to the &lt;fePointLight&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGFESpecularLightingElement</h3>
+      <p>The SVGFESpecularLightingElement interface corresponds to the &lt;feSpecularLighting&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGFESpotLightElement</h3>
+      <p>The SVGFESpotLightElement interface corresponds to the &lt;feSpotLight&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGFETileElement</h3>
+      <p>The SVGFETileElement interface corresponds to the &lt;feTile&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGFETurbulenceElement</h3>
+      <p>The SVGFETurbulenceElement interface corresponds to the &lt;feTurbulence&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGFilterElement</h3>
+      <p>The SVGFilterElement interface provides access to the properties of &lt;filter&gt; elements, as well as
+        methods to manipulate them.</p>
+    </li>
+    <li>
+      <h3>SVGFilterPrimitiveStandardAttributes</h3>
+      <p>The SVGFilterPrimitiveStandardAttributes interface defines the set of DOM attributes that are common across
+        the filter primitive interfaces.</p>
+    </li>
+    <li>
+      <h3>SVGFontElement </h3>
+      <p>The SVGFontElement interface corresponds to the &lt;font&gt; elements.</p>
+    </li>
+    <li>
+      <h3>SVGFontFaceElement </h3>
+      <p>The SVGFontFaceElement interface corresponds to the &lt;font-face&gt; elements.</p>
+    </li>
+    <li>
+      <h3>SVGFontFaceFormatElement </h3>
+      <p>The SVGFontFaceFormatElement interface corresponds to the &lt;font-face-format&gt; elements.</p>
+    </li>
+    <li>
+      <h3>SVGFontFaceNameElement </h3>
+      <p>The SVGFontFaceNameElement interface corresponds to the &lt;font-face-name&gt; elements.</p>
+    </li>
+    <li>
+      <h3>SVGFontFaceSrcElement </h3>
+      <p>The SVGFontFaceSrcElement interface corresponds to the &lt;font-face-src&gt; elements.</p>
+    </li>
+    <li>
+      <h3>SVGFontFaceUriElement </h3>
+      <p>The SVGFontFaceUriElement interface corresponds to the &lt;font-face-uri&gt; elements.</p>
+    </li>
+    <li>
+      <h3>SVGForeignObjectElement</h3>
+      <p>The SVGForeignObjectElement interface provides access to the properties of &lt;foreignObject&gt; elements,
+        as well as methods to manipulate them.</p>
+    </li>
+    <li>
+      <h3>SVGGElement</h3>
+      <p>The SVGGElement interface corresponds to the &lt;g&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGGeometryElement</h3>
+      <p>The SVGGeometryElement interface represents SVG elements whose rendering is defined by geometry with an
+        equivalent path, and which can be filled and stroked. This includes paths and the basic shapes.</p>
+    </li>
+    <li>
+      <h3>SVGGlyphElement </h3>
+      <p>The SVGGlyphElement interface corresponds to the &lt;glyph&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGGlyphRefElement </h3>
+      <p>The SVGGlyphRefElement interface corresponds to the &lt;glyphRef&gt; elements.</p>
+    </li>
+    <li>
+      <h3>SVGGradientElement</h3>
+      <p>The SVGGradient interface is a base interface used by SVGLinearGradientElement and
+        SVGRadialGradientElement.</p>
+    </li>
+    <li>
+      <h3>SVGGraphicsElement</h3>
+      <p>The SVGGraphicsElement interface represents SVG elements whose primary purpose is to directly render
+        graphics into a group.</p>
+    </li>
+    <li>
+      <h3>SVGHKernElement </h3>
+      <p>The SVGHKernElement interface corresponds to the &lt;hkern&gt; elements.</p>
+    </li>
+    <li>
+      <h3>SVGImageElement</h3>
+      <p>The SVGImageElement interface corresponds to the &lt;image&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGLength</h3>
+      <p>The SVGLength interface correspond to the &lt;length&gt; basic data type.</p>
+    </li>
+    <li>
+      <h3>SVGLengthList</h3>
+      <p>The SVGLengthList defines a list of SVGLength objects.</p>
+    </li>
+    <li>
+      <h3>SVGLineElement</h3>
+      <p>The SVGLineElement interface provides access to the properties of &lt;line&gt; elements, as well as methods
+        to manipulate them.</p>
+    </li>
+    <li>
+      <h3>SVGLinearGradientElement</h3>
+      <p>The SVGLinearGradientElement interface corresponds to the &lt;linearGradient&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGMPathElement</h3>
+      <p>The SVGMPathElement interface corresponds to the &lt;mpath&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGMaskElement</h3>
+      <p>The SVGMaskElement interface provides access to the properties of &lt;mask&gt; elements, as well as methods
+        to manipulate them.</p>
+    </li>
+    <li>
+      <h3>SVGMatrix </h3>
+      <p>Many of SVG's graphics operations utilize 2x3 matrices of the form:</p>
+    </li>
+    <li>
+      <h3>SVGMeshElement </h3>
+      <p>The SVGMeshElement interface provides access to the properties of &lt;mesh&gt; elements.</p>
+    </li>
+    <li>
+      <h3>SVGMetadataElement</h3>
+      <p>The SVGMetadataElement interface corresponds to the &lt;metadata&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGMissingGlyphElement </h3>
+      <p>The SVGMissingGlyphElement interface corresponds to the &lt;missing-glyph&gt; elements.</p>
+    </li>
+    <li>
+      <h3>SVGNumber</h3>
+      <p>The SVGNumber interface corresponds to the &lt;number&gt; basic data type.</p>
+    </li>
+    <li>
+      <h3>SVGNumberList</h3>
+      <p>The SVGNumberList defines a list of SVGNumber objects.</p>
+    </li>
+    <li>
+      <h3>SVGPathElement</h3>
+      <p>The SVGPathElement interface corresponds to the &lt;path&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGPatternElement</h3>
+      <p>The SVGPatternElement interface corresponds to the &lt;pattern&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGPoint</h3>
+      <p>An SVGPoint represents a 2D or 3D point in the SVG coordinate system.</p>
+    </li>
+    <li>
+      <h3>SVGPolygonElement</h3>
+      <p>The SVGPolygonElement interface provides access to the properties of &lt;polygon&gt; elements, as well as
+        methods to manipulate them.</p>
+    </li>
+    <li>
+      <h3>SVGPolylineElement</h3>
+      <p>The SVGPolylineElement interface provides access to the properties of &lt;polyline&gt; elements, as well as
+        methods to manipulate them.</p>
+    </li>
+    <li>
+      <h3>SVGPreserveAspectRatio</h3>
+      <p>The SVGPreserveAspectRatio interface corresponds to the preserveAspectRatio attribute, which is available
+        for some of SVG's elements.</p>
+    </li>
+    <li>
+      <h3>SVGRadialGradientElement</h3>
+      <p>The SVGRadialGradientElement interface corresponds to the &lt;RadialGradient&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGRect</h3>
+      <p>The SVGRect represents a rectangle. Rectangles consist&nbsp;of an x and y coordinate pair identifying a
+        minimum x value, a minimum y value, and a width and height, which are constrained to be non-negative.</p>
+    </li>
+    <li>
+      <h3>SVGRectElement</h3>
+      <p>The SVGRectElement interface provides access to the properties of &lt;rect&gt; elements, as well as methods
+        to manipulate them.</p>
+    </li>
+    <li>
+      <h3>SVGRenderingIntent </h3>
+      <p>The SVGRenderingIntent interface defines the enumerated list of possible values for rendering-intent
+        attributes or descriptors.</p>
+    </li>
+    <li>
+      <h3>SVGSVGElement</h3>
+      <p>The SVGSVGElement interface provides access to the properties of &lt;svg&gt; elements, as well as methods
+        to manipulate them. This interface contains also various miscellaneous commonly-used utility methods, such
+        as matrix operations and the ability to control the time of redraw on visual rendering devices.</p>
+    </li>
+    <li>
+      <h3>SVGScriptElement</h3>
+      <p>The SVGScriptElement interface corresponds to the SVG &lt;script&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGSetElement</h3>
+      <p>The SVGSetElement interface corresponds to the &lt;set&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGSolidcolorElement </h3>
+      <p>The SVGSolidcolorElement interface corresponds to the &lt;solidcolor&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGStopElement</h3>
+      <p>The SVGStopElement interface corresponds to the &lt;stop&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGStringList</h3>
+      <p>The SVGStringList defines a list of DOMString objects.</p>
+    </li>
+    <li>
+      <h3>SVGStylable</h3>
+      <p>The SVGStylable interface is implemented on all objects corresponding to SVG elements that can have style,
+        class and presentation attributes specified on them.</p>
+    </li>
+    <li>
+      <h3>SVGStyleElement</h3>
+      <p>The SVGStyleElement interface corresponds to the SVG &lt;style&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGSwitchElement</h3>
+      <p>The SVGSwitchElement interface corresponds to the &lt;switch&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGSymbolElement</h3>
+      <p>The SVGSymbolElement interface corresponds to the &lt;symbol&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGTRefElement </h3>
+      <p>The SVGTRefElement interface corresponds to the &lt;tref&gt; elements.</p>
+    </li>
+    <li>
+      <h3>SVGTSpanElement</h3>
+      <p>The SVGTSpanElement interface represents a &lt;tspan&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGTests</h3>
+      <p>The SVGTests interface is used to reflect conditional processing attributes and is mixed into other
+        interfaces for elements that support these attributes.</p>
+    </li>
+    <li>
+      <h3>SVGTextContentElement</h3>
+      <p>The SVGTextContentElement interface is implemented by elements that support rendering child text content.
+        It is inherited by various text-related interfaces, such as SVGTextElement, SVGTSpanElement, SVGTRefElement,
+        SVGAltGlyphElement and SVGTextPathElement.</p>
+    </li>
+    <li>
+      <h3>SVGTextElement</h3>
+      <p>The SVGTextElement interface corresponds to the &lt;text&gt; elements.</p>
+    </li>
+    <li>
+      <h3>SVGTextPathElement</h3>
+      <p>The SVGTextPathElement interface corresponds to the &lt;textPath&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGTextPositioningElement</h3>
+      <p>The SVGTextPositioningElement interface is implemented by elements that support attributes that position
+        individual text glyphs. It is inherited by SVGTextElement, SVGTSpanElement, SVGTRefElement and
+        SVGAltGlyphElement.</p>
+    </li>
+    <li>
+      <h3>SVGTitleElement</h3>
+      <p>The SVGTitleElement interface corresponds to the &lt;title&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGTransform</h3>
+      <p>SVGTransform is the interface for one of the component transformations within an SVGTransformList; thus, an
+        SVGTransform object corresponds to a single component (e.g., scale(…) or matrix(…)) within a transform
+        attribute.</p>
+    </li>
+    <li>
+      <h3>SVGTransformList</h3>
+      <p>The SVGTransformList defines a list of SVGTransform objects.</p>
+    </li>
+    <li>
+      <h3>SVGTransformable</h3>
+      <p>Interface SVGTransformable contains properties and methods that apply to all elements which have attribute
+        transform.</p>
+    </li>
+    <li>
+      <h3>SVGURIReference</h3>
+      <p>The SVGURIReference interface is used to reflect the href attribute and the deprecated xlink:href
+        attribute.</p>
+    </li>
+    <li>
+      <h3>SVGUnitTypes</h3>
+      <p>The SVGUnitTypes interface defines a commonly used set of constants used for reflecting gradientUnits,
+        patternContentUnits and other similar attributes.</p>
+    </li>
+    <li>
+      <h3>SVGUseElement</h3>
+      <p>The SVGUseElement interface corresponds to the &lt;use&gt; element.</p>
+    </li>
+    <li>
+      <h3>SVGVKernElement </h3>
+      <p>The SVGVKernElement interface corresponds to the &lt;vkern&gt; elements.</p>
+    </li>
+    <li>
+      <h3>SVGViewElement</h3>
+      <p>The SVGViewElement interface provides access to the properties of &lt;view&gt; elements, as well as methods
+        to manipulate them.</p>
+    </li>
+    <li>
+      <h3>SVGZoomAndPan</h3>
+      <p>The SVGZoomAndPan interface is used to reflect the zoomAndPan attribute, and is mixed in to other
+        interfaces for elements that support this attribute.</p>
+    </li>
+    <li>
+      <h3>Screen</h3>
+      <p>The Screen interface represents a screen, usually the one on which the current window is being rendered,
+        and is obtained using window.screen.</p>
+    </li>
+    <li>
+      <h3>ScreenOrientation</h3>
+      <p>The ScreenOrientation interface of the the Screen Orientation API provides information about the current
+        orientation of the document.</p>
+    </li>
+    <li>
+      <h3>ScriptProcessorNode </h3>
+      <p>The ScriptProcessorNode interface allows the generation, processing, or analyzing of audio using
+        JavaScript.</p>
+    </li>
+    <li>
+      <h3>ScrollToOptions</h3>
+      <p>The ScrollToOptions dictionary of the CSSOM View spec contains properties specifying where an element
+        should be scrolled to, and whether the scrolling should be smooth.</p>
+    </li>
+    <li>
+      <h3>SecurityPolicyViolationEvent </h3>
+      <p>The SecurityPolicyViolationEvent interface inherits from Event, and represents the event object of an event
+        sent on a document or worker when its content security policy is violated.</p>
+    </li>
+    <li>
+      <h3>Selection </h3>
+      <p>A Selection object represents the range of text selected by the user or the current position of the caret.
+        To obtain a Selection object for examination or manipulation, call window.getSelection().</p>
+    </li>
+    <li>
+      <h3>Sensor</h3>
+      <p>The Sensor interface of the the Sensor APIs is the base class for all the other sensor interfaces. This
+        interface cannot be used directly. Instead it provides properties, event handlers, and methods accessed by
+        interfaces that inherit from it.</p>
+    </li>
+    <li>
+      <h3>SensorErrorEvent</h3>
+      <p>The SensorErrorEvent interface of the Sensor APIs provides information about errors thrown by a Sensor or
+        related interface. </p>
+    </li>
+    <li>
+      <h3>ServiceWorker</h3>
+      <p>The ServiceWorker interface of the ServiceWorker API provides a reference to a service worker. Multiple
+        browsing contexts (e.g. pages, workers, etc.) can be associated with the same service worker, each through a
+        unique ServiceWorker object.</p>
+    </li>
+    <li>
+      <h3>ServiceWorkerContainer</h3>
+      <p>The&nbsp;ServiceWorkerContainer&nbsp;interface of the&nbsp;ServiceWorker API&nbsp;provides an object
+        representing the service worker as an overall unit in the network ecosystem, including facilities to
+        register, unregister and update service workers, and access the state of service workers and their
+        registrations.</p>
+    </li>
+    <li>
+      <h3>ServiceWorkerGlobalScope</h3>
+      <p>The ServiceWorkerGlobalScope interface of the ServiceWorker API represents the global execution context of
+        a service worker.</p>
+    </li>
+    <li>
+      <h3>ServiceWorkerMessageEvent </h3>
+      <p>The ServiceWorkerMessageEvent interface of the ServiceWorker API contains information about an event sent
+        to a ServiceWorkerContainer&nbsp;target. This extends the default message event to allow setting a
+        ServiceWorker object as the source of a message. The event object is accessed via the handler function of a
+        message event, when fired by a message received from a service worker.</p>
+    </li>
+    <li>
+      <h3>ServiceWorkerRegistration</h3>
+      <p>The ServiceWorkerRegistration interface of the ServiceWorker API represents the service worker
+        registration. You register a service worker to control one or more pages that share the same origin.</p>
+    </li>
+    <li>
+      <h3>ServiceWorkerState</h3>
+      <p>The ServiceWorkerState is associated with its ServiceWorker's state.</p>
+    </li>
+    <li>
+      <h3>ShadowRoot</h3>
+      <p>The ShadowRoot interface of the Shadow DOM API is the root node of a DOM subtree that is rendered
+        separately from a document's main DOM tree.</p>
+    </li>
+    <li>
+      <h3>SharedWorker</h3>
+      <p>The SharedWorker interface represents a specific kind of worker that can be accessed from several browsing
+        contexts, such as several windows, iframes or even workers. They implement an interface different than
+        dedicated workers and have a different global scope, SharedWorkerGlobalScope.</p>
+    </li>
+    <li>
+      <h3>SharedWorkerGlobalScope</h3>
+      <p>The SharedWorkerGlobalScope object (the SharedWorker global scope) is accessible through the self keyword.
+        Some additional global functions, namespaces objects, and constructors, not typically associated with the
+        worker global scope, but available on it, are listed in the JavaScript Reference. See the complete list of
+        functions available to workers.</p>
+    </li>
+    <li>
+      <h3>Slotable</h3>
+      <p>The Slotable mixin defines features that allow nodes to become the contents of a &lt;slot&gt; element — the
+        following features are included in both Element and Text.</p>
+    </li>
+    <li>
+      <h3>SourceBuffer </h3>
+      <p>The SourceBuffer interface represents a chunk of media to be passed into an HTMLMediaElement and played,
+        via a MediaSource&nbsp;object. This can be made up of one or several media segments.</p>
+    </li>
+    <li>
+      <h3>SourceBufferList </h3>
+      <p>The SourceBufferList interface represents a simple container list for multiple SourceBuffer objects.</p>
+    </li>
+    <li>
+      <h3>SpeechGrammar </h3>
+      <p>The SpeechGrammar interface of the Web Speech API represents a set of words or patterns of words that we
+        want the recognition service to recognize.</p>
+    </li>
+    <li>
+      <h3>SpeechGrammarList </h3>
+      <p>The SpeechGrammarList interface of the Web Speech API represents a list of SpeechGrammar objects containing
+        words or patterns of words that we want the recognition service to recognize.</p>
+    </li>
+    <li>
+      <h3>SpeechRecognition </h3>
+      <p>The SpeechRecognition interface of the Web Speech API is the controller interface for the recognition
+        service; this also handles the SpeechRecognitionEvent sent from the recognition service.</p>
+    </li>
+    <li>
+      <h3>SpeechRecognitionAlternative </h3>
+      <p>The SpeechRecognitionAlternative interface of the Web Speech API represents a single word that has been
+        recognised by the speech recognition service.</p>
+    </li>
+    <li>
+      <h3>SpeechRecognitionError </h3>
+      <p>The SpeechRecognitionError interface of the Web Speech API represents error messages from the recognition
+        service.</p>
+    </li>
+    <li>
+      <h3>SpeechRecognitionErrorEvent</h3>
+      <p>The SpeechRecognitionErrorEvent interface of the Web Speech API represents error messages from the
+        recognition service.</p>
+    </li>
+    <li>
+      <h3>SpeechRecognitionEvent </h3>
+      <p>The SpeechRecognitionEvent interface of the Web Speech API represents the event object for the result and
+        nomatch events, and contains all the data associated with an interim or final speech recognition result.</p>
+    </li>
+    <li>
+      <h3>SpeechRecognitionResult </h3>
+      <p>The SpeechRecognitionResult interface of the Web Speech API represents a single recognition match, which
+        may contain multiple SpeechRecognitionAlternative objects.</p>
+    </li>
+    <li>
+      <h3>SpeechRecognitionResultList </h3>
+      <p>The SpeechRecognitionResultList interface of the Web Speech API represents a list of
+        SpeechRecognitionResult objects, or a single one if results are being captured in continuous mode.</p>
+    </li>
+    <li>
+      <h3>SpeechSynthesis </h3>
+      <p>The SpeechSynthesis interface of the Web Speech API is the controller interface for the speech service;
+        this can be used to retrieve information about the synthesis voices available on the device, start and pause
+        speech, and other commands besides.</p>
+    </li>
+    <li>
+      <h3>SpeechSynthesisErrorEvent </h3>
+      <p>The SpeechSynthesisErrorEvent interface of the Web Speech API contains information about any errors that
+        occur while processing SpeechSynthesisUtterance objects in the speech service.</p>
+    </li>
+    <li>
+      <h3>SpeechSynthesisEvent </h3>
+      <p>The SpeechSynthesisEvent interface of the Web Speech API contains information about the current state of
+        SpeechSynthesisUtterance objects that have been processed in the speech service.</p>
+    </li>
+    <li>
+      <h3>SpeechSynthesisUtterance </h3>
+      <p>The SpeechSynthesisUtterance interface of the Web Speech API represents a speech request. It contains the
+        content the speech service should read and information about how to read it (e.g. language, pitch and
+        volume.)</p>
+    </li>
+    <li>
+      <h3>SpeechSynthesisVoice </h3>
+      <p>The SpeechSynthesisVoice interface of the Web Speech API represents a voice that the system supports. Every
+        SpeechSynthesisVoice has its own relative speech service including information about language, name and URI.
+      </p>
+    </li>
+    <li>
+      <h3>StaticRange</h3>
+      <p>The DOM&nbsp;StaticRange interface extends AbstractRange to provide a method to specify a range of content
+        in the DOM whose contents don't update to reflect changes which occur within the DOM tree.</p>
+    </li>
+    <li>
+      <h3>StereoPannerNode</h3>
+      <p>The pan property takes a unitless value between -1 (full left pan) and 1 (full right pan). This interface
+        was introduced as a much simpler way to apply a simple panning effect than having to use a full PannerNode.
+      </p>
+    </li>
+    <li>
+      <h3>Storage</h3>
+      <p>The Storage interface of the Web Storage API provides access to a particular domain's session or local
+        storage. It allows, for example, the addition, modification, or deletion of stored data items.</p>
+    </li>
+    <li>
+      <h3>StorageEstimate</h3>
+      <p>The StorageEstimate dictionary is used by the StorageManager to provide estimates of the size of a site's
+        or application's data store and how much of it is in use. The estimate() method returns an object that
+        conforms to this dictionary when its Promise resolves.</p>
+    </li>
+    <li>
+      <h3>StorageEvent</h3>
+      <p>A StorageEvent is sent to a window when a storage area it has access to is changed within the context of
+        another document.</p>
+    </li>
+    <li>
+      <h3>StorageManager</h3>
+      <p>The StorageManager interface of the the Storage API provides an interface for managing persistance
+        permissions and estimating available storage. You can get a reference to this interface using either
+        navigator.storage or WorkerNavigator.storage.</p>
+    </li>
+    <li>
+      <h3>StorageQuota </h3>
+      <p>The storageQuota property of the Navigator interface of the&nbsp;Quota Management API&nbsp;provides means
+        to query and request storage usage and quota information.</p>
+    </li>
+    <li>
+      <h3>StylePropertyMap </h3>
+      <p>The StylePropertyMap interface of the the CSS Typed Object Model API provides a representation of a CSS
+        declaration block that is an alternative to CSSStyleDeclaration.</p>
+    </li>
+    <li>
+      <h3>StylePropertyMapReadOnly </h3>
+      <p>The StylePropertyMapReadOnly interface of the the CSS Typed Object Model API provides a read-only
+        representation of a CSS declaration block that is an alternative to CSSStyleDeclaration. Retrieve an
+        instance of this interface using Element.computedStyleMap().</p>
+    </li>
+    <li>
+      <h3>StyleSheet</h3>
+      <p>An object implementing the StyleSheet interface represents a single style sheet. CSS style sheets will
+        further implement the more specialized CSSStyleSheet interface.</p>
+    </li>
+    <li>
+      <h3>StyleSheetList</h3>
+      <p>The StyleSheetList interface represents a list of StyleSheet.</p>
+    </li>
+    <li>
+      <h3>SubmitEvent</h3>
+      <p>The&nbsp;SubmitEvent&nbsp;interface defines the object used to represent an HTML form's&nbsp;submit event.
+        This event is fired at the &lt;form&gt; when the form's submit action is invoked.</p>
+    </li>
+    <li>
+      <h3>SubtleCrypto</h3>
+      <p>The SubtleCrypto interface of the Web Crypto API provides a number of low-level cryptographic functions.
+        Access to the features of&nbsp;SubtleCrypto&nbsp;is obtained through the subtle property of the Crypto
+        object you get from Window.crypto.</p>
+    </li>
+    <li>
+      <h3>SyncEvent </h3>
+      <p>The SyncEvent interface represents a sync action that is dispatched on the ServiceWorkerGlobalScope&nbsp;of
+        a ServiceWorker.&nbsp;</p>
+    </li>
+    <li>
+      <h3>SyncManager </h3>
+      <p>The SyncManager interface of the the ServiceWorker API provides an interface for registering and listing
+        sync registrations.</p>
+    </li>
+  </ul>
+  <span>T</span>
+  <ul>
+    <li>
+      <h3>TaskAttributionTiming </h3>
+      <p>The TaskAttributionTiming interface of&nbsp;the Long Tasks API returns information about the work involved
+        in a long task and its associate frame context. The frame context, also called the container, is
+        the&nbsp;iframe, embed or object&nbsp;that is being implicated, on the whole, for a long task.</p>
+    </li>
+    <li>
+      <h3>Text</h3>
+      <p>The Text interface represents the textual content of Element or Attr. </p>
+    </li>
+    <li>
+      <h3>TextDecoder </h3>
+      <p>The TextDecoder interface represents a decoder for a specific text encoding, such as UTF-8, ISO-8859-2,
+        KOI8-R, GBK, etc. A decoder takes a stream of bytes as input and emits a stream of code points.</p>
+    </li>
+    <li>
+      <h3>TextEncoder </h3>
+      <p>TextEncoder takes a stream of code points as input and emits a stream of UTF-8 bytes.</p>
+    </li>
+    <li>
+      <h3>TextMetrics</h3>
+      <p>The TextMetrics interface represents the dimensions of a piece of text in the canvas; a textMetrics()
+        instance can be retrieved using the CanvasRenderingContext2D.measureText() method.</p>
+    </li>
+    <li>
+      <h3>TextRange</h3>
+      <p>A&nbsp;TextRange object represents a fragment&nbsp;of text in a document, similar to the standard
+        defined&nbsp;Range&nbsp;interface.</p>
+    </li>
+    <li>
+      <h3>TextTrack</h3>
+      <p>This interface also inherits properties from EventTarget.</p>
+    </li>
+    <li>
+      <h3>TextTrackCue</h3>
+      <p>TextTrackCue is an abstract class which is used as the basis for the various derived cue types, such as
+        VTTCue; you will instead work with those derived types.</p>
+    </li>
+    <li>
+      <h3>TextTrackList</h3>
+      <p>The TextTrackList interface is used to represent a list of the text tracks defined by the &lt;track&gt;
+        element, with each track represented by a separate textTrack object in the list.</p>
+    </li>
+    <li>
+      <h3>TimeEvent</h3>
+      <p>The TimeEvent interface, a part of SVG SMIL animation, provides specific contextual information associated
+        with Time events. It extends Event.</p>
+    </li>
+    <li>
+      <h3>TimeRanges</h3>
+      <p>The TimeRanges interface is used to represent a set of time ranges, primarily for the purpose of tracking
+        which portions of media have been buffered when loading it for use by the &lt;audio&gt; and
+        &lt;video&gt;&nbsp;elements.</p>
+    </li>
+    <li>
+      <h3>Touch</h3>
+      <p>The Touch interface represents a single contact point on a touch-sensitive device. The contact point is
+        commonly a finger or stylus and the device may be a touchscreen or trackpad.</p>
+    </li>
+    <li>
+      <h3>TouchEvent</h3>
+      <p>The TouchEvent interface represents an UIEvent which is sent when the state of contacts with a
+        touch-sensitive surface changes. This surface can be a touch screen or trackpad, for example. The event can
+        describe one or more points of contact with the screen and includes support for detecting movement, addition
+        and removal of contact points, and so forth.</p>
+    </li>
+    <li>
+      <h3>TouchList</h3>
+      <p>The TouchList interface represents a list of contact points on a touch surface. For example, if the user
+        has three fingers on the touch surface (such as a screen or trackpad), the corresponding TouchList object
+        would have one Touch object for each finger, for a total of three entries.</p>
+    </li>
+    <li>
+      <h3>TrackDefault </h3>
+      <p>The TrackDefault interface provides a SourceBuffer with kind, label, and language information for tracks
+        that do not contain this information in the initialization segments of a media chunk.</p>
+    </li>
+    <li>
+      <h3>TrackDefaultList </h3>
+      <p>The TrackDefaultList interface represents a simple container list for multiple TrackDefault objects.</p>
+    </li>
+    <li>
+      <h3>TrackEvent</h3>
+      <p>The TrackEvent interface, which is part of the HTML DOM specification, is used for events which represent
+        changes to a&nbsp;set of available tracks on an HTML media element; these events are addtrack and
+        removetrack.</p>
+    </li>
+    <li>
+      <h3>Transferable</h3>
+      <p>The Transferable interface represents an object that can be transfered between different execution
+        contexts, like the main thread and Web workers.</p>
+    </li>
+    <li>
+      <h3>TransformStream</h3>
+      <p>The TransformStream interface of the&nbsp;Streams API&nbsp;represents a set of transformable data.</p>
+    </li>
+    <li>
+      <h3>TransitionEvent </h3>
+      <p>The TransitionEvent interface represents events providing information related to transitions.</p>
+    </li>
+    <li>
+      <h3>TreeWalker</h3>
+      <p>The TreeWalker object represents the nodes of a document subtree and a position within them.</p>
+    </li>
+    <li>
+      <h3>TypeInfo </h3>
+      <p>The obsolete TypeInfo interface was intended to be used to describe a DOM data type by keying its name to a
+        namespace within the document's schema.</p>
+    </li>
+  </ul>
+  <span>U</span>
+  <ul>
+    <li>
+      <h3>UIEvent</h3>
+      <p>The UIEvent interface represents simple user interface events.</p>
+    </li>
+    <li>
+      <h3>ULongRange</h3>
+      <p>The ULongRange dictionary is used to define a range of permitted integer values for a property, with either
+        or both a maximum and minimum value specified. The ConstrainULongRange dictionary is based on this,
+        augmenting it to support exact and ideal values as well.</p>
+    </li>
+    <li>
+      <h3>URL</h3>
+      <p>The URL&nbsp;interface is used to parse, construct, normalize, and encode URLs. It works by providing
+        properties which allow you to easily read and modify the components of a URL.</p>
+    </li>
+    <li>
+      <h3>URLSearchParams</h3>
+      <p>The URLSearchParams interface defines utility methods to work with the query string of a URL.</p>
+    </li>
+    <li>
+      <h3>URLUtilsReadOnly </h3>
+      <p>The obsolete URLUtilsReadOnly interface previously defined utility methods for working with URLs. These
+        were then inherited by other interfaces, such as WorkerLocation.</p>
+    </li>
+    <li>
+      <h3>USB</h3>
+      <p>The USB interface of the WebUSB API provides attributes and methods for finding and connecting USB devices
+        from a web page.</p>
+    </li>
+    <li>
+      <h3>USBDevice</h3>
+      <p>The USBDevice interface of the the WebUSB API provides access to metadata about a paired USB device and
+        methods for controlling it.</p>
+    </li>
+    <li>
+      <h3>USVString</h3>
+      <p>USVString corresponds to the set of all possible sequences of unicode scalar values. USVString maps to a
+        String when returned in JavaScript; it's generally only used for APIs that perform text processing and need
+        a string of unicode scalar values to operate on. USVString is equivalent to DOMString except for not
+        allowing unpaired surrogate codepoints. Unpaired surrogate codepoints present in USVString are converted by
+        the browser to Unicode 'replacement character' U+FFFD, (�).</p>
+    </li>
+    <li>
+      <h3>UserDataHandler </h3>
+      <p>When associating user data with a key on a node, Node.setUserData() can also accept, in its third argument,
+        a handler which will be called when the object is cloned, imported, deleted, renamed, or adopted. Per the
+        specification, exceptions should not be thrown in a UserDataHandler. In both document.importNode() and
+        Node.cloneNode(), although user data is not copied over, the handler will be called.</p>
+    </li>
+    <li>
+      <h3>UserProximityEvent </h3>
+      <p>The UserProximityEvent indicates whether a nearby physical object is present by using the proximity sensor
+        of a device.</p>
+    </li>
+  </ul>
+  <span>V</span>
+  <ul>
+    <li>
+      <h3>VRDisplay </h3>
+      <p>The VRDisplay interface of the WebVR API represents any VR device supported by this API. It includes
+        generic information such as device IDs and descriptions, as well as methods for starting to present a VR
+        scene, retrieving eye parameters and display capabilities, and other important functionality.</p>
+    </li>
+    <li>
+      <h3>VRDisplayCapabilities </h3>
+      <p>The VRDisplayCapabilities interface of the WebVR API describes the capabilities of a VRDisplay — its
+        features can be used to perform VR device capability tests, for example can it return position information.
+      </p>
+    </li>
+    <li>
+      <h3>VRDisplayEvent </h3>
+      <p>The VRDisplayEvent interface of the WebVR API represents represents the event object of WebVR-related
+        events (see the list of WebVR window extensions).</p>
+    </li>
+    <li>
+      <h3>VREyeParameters </h3>
+      <p>The VREyeParameters interface of the WebVR API represents all the information required to correctly render
+        a scene for a given eye, including field of view information.</p>
+    </li>
+    <li>
+      <h3>VRFieldOfView </h3>
+      <p>The VRFieldOfView interface of the WebVR API represents a field of view defined by 4 different degree
+        values describing the view from a center point.</p>
+    </li>
+    <li>
+      <h3>VRFrameData </h3>
+      <p>The VRFrameData interface of the WebVR API represents all the information needed to render a single frame
+        of a VR scene; constructed by VRDisplay.getFrameData().</p>
+    </li>
+    <li>
+      <h3>VRLayerInit </h3>
+      <p>The VRLayerInit interface (dictionary) of the WebVR API represents a content layer (an HTMLCanvasElement or
+        OffscreenCanvas) that you want to present in a VR display.</p>
+    </li>
+    <li>
+      <h3>VRPose </h3>
+      <p>The VRPose interface of the WebVR API represents the state of a VR sensor at a given timestamp (which
+        includes orientation, position, velocity, and acceleration information.)</p>
+    </li>
+    <li>
+      <h3>VRStageParameters </h3>
+      <p>The VRStageParameters interface of the WebVR API represents the values describing the the stage area for
+        devices that support room-scale experiences.</p>
+    </li>
+    <li>
+      <h3>VTTCue</h3>
+      <p>This interface also inherits properties from TextTrackCue.</p>
+    </li>
+    <li>
+      <h3>VTTRegion</h3>
+      <p>The VTTRegion&nbsp;interface—part of the API for handling WebVTT (text tracks on media
+        presentations)—describes a portion of the video to render a VTTCue onto.</p>
+    </li>
+    <li>
+      <h3>ValidityState</h3>
+      <p>The ValidityState interface represents the validity states that an element can be in, with respect to
+        constraint validation. Together, they help explain why an element's value fails to validate, if it's not
+        valid.</p>
+    </li>
+    <li>
+      <h3>VideoConfiguration </h3>
+      <p>The VideoConfiguration dictionary of the Media Capabilities API is used to define the video file being
+        tested when calling the MediaCapabilities methods encodingInfo() and decodingInfo() to determine whether or
+        not the described video configuration is supported, and how smoothly and how smoooth and power-efficient it
+        can be handled.</p>
+    </li>
+    <li>
+      <h3>VideoPlaybackQuality </h3>
+      <p>A VideoPlaybackQuality object is returned by the HTMLVideoElement.getVideoPlaybackQuality() method and
+        contains metrics that can be used to determine the playback quality of a video.</p>
+    </li>
+    <li>
+      <h3>VideoTrack</h3>
+      <p>The VideoTrack interface represents a single video track from a &lt;video&gt; element.</p>
+    </li>
+    <li>
+      <h3>VideoTrackList</h3>
+      <p>The VideoTrackList interface is used to represent a list of the video tracks contained within a
+        &lt;video&gt; element, with each track represented by a separate VideoTrack object in the list.</p>
+    </li>
+    <li>
+      <h3>VisualViewport </h3>
+      <p>The VisualViewport interface of&nbsp;the Visual Viewport API&nbsp;represents the visual viewport for a
+        given window. For a page containing iframes, each iframe, as well as the containing page, will have a unique
+        window object.&nbsp;Each window on a page will have a unique VisualViewport representing the properties
+        associated with that window.</p>
+    </li>
+  </ul>
+  <span>W</span>
+  <ul>
+    <li>
+      <h3>WEBGL_color_buffer_float</h3>
+      <p>The WEBGL_color_buffer_float extension is part of the WebGL API and adds the ability to render to 32-bit
+        floating-point color buffers.</p>
+    </li>
+    <li>
+      <h3>WEBGL_compressed_texture_astc</h3>
+      <p>The WEBGL_compressed_texture_astc extension is part of the WebGL API and exposes Adaptive Scalable Texture
+        Compression (ASTC) compressed texture formats to WebGL.</p>
+    </li>
+    <li>
+      <h3>WEBGL_compressed_texture_atc</h3>
+      <p>The WEBGL_compressed_texture_atc extension is part of the WebGL API and exposes 3 ATC compressed texture
+        formats. ATC is a proprietary compression algorithm for compressing textures on handheld devices.</p>
+    </li>
+    <li>
+      <h3>WEBGL_compressed_texture_etc</h3>
+      <p>The WEBGL_compressed_texture_etc extension is part of the WebGL API and exposes 10 ETC/EAC compressed
+        texture formats.</p>
+    </li>
+    <li>
+      <h3>WEBGL_compressed_texture_etc1</h3>
+      <p>The WEBGL_compressed_texture_etc1 extension is part of the WebGL API and exposes the ETC1 compressed
+        texture format.</p>
+    </li>
+    <li>
+      <h3>WEBGL_compressed_texture_pvrtc</h3>
+      <p>The WEBGL_compressed_texture_pvrtc extension is part of the WebGL API and exposes four PVRTC compressed
+        texture formats.</p>
+    </li>
+    <li>
+      <h3>WEBGL_compressed_texture_s3tc</h3>
+      <p>The WEBGL_compressed_texture_s3tc extension is part of the WebGL API and exposes four S3TC compressed
+        texture formats.</p>
+    </li>
+    <li>
+      <h3>WEBGL_compressed_texture_s3tc_srgb</h3>
+      <p>The WEBGL_compressed_texture_s3tc_srgb extension is part of the WebGL API and exposes four S3TC compressed
+        texture formats for the sRGB colorspace.</p>
+    </li>
+    <li>
+      <h3>WEBGL_debug_renderer_info</h3>
+      <p>The WEBGL_debug_renderer_info extension is part of the WebGL API and exposes two constants with information
+        about the graphics driver for debugging purposes.</p>
+    </li>
+    <li>
+      <h3>WEBGL_debug_shaders</h3>
+      <p>The WEBGL_debug_shaders extension is part of the WebGL API and exposes a method to debug shaders from
+        privileged contexts.</p>
+    </li>
+    <li>
+      <h3>WEBGL_depth_texture</h3>
+      <p>The WEBGL_depth_texture extension is part of the WebGL API and defines 2D depth and depth-stencil textures.
+      </p>
+    </li>
+    <li>
+      <h3>WEBGL_draw_buffers</h3>
+      <p>The WEBGL_draw_buffers extension is part of the WebGL API and enables a fragment shader to write to several
+        textures, which is useful for deferred shading, for example.</p>
+    </li>
+    <li>
+      <h3>WEBGL_lose_context</h3>
+      <p>The WEBGL_lose_context extension is part of the WebGL API and exposes functions to simulate losing and
+        restoring a WebGLRenderingContext.</p>
+    </li>
+    <li>
+      <h3>WaveShaperNode</h3>
+      <p>A WaveShaperNode always has exactly one input and one output.</p>
+    </li>
+    <li>
+      <h3>WebGL2RenderingContext </h3>
+      <p>The WebGL2RenderingContext interface provides the OpenGL ES 3.0 rendering context for the drawing surface
+        of an HTML &lt;canvas&gt; element.</p>
+    </li>
+    <li>
+      <h3>WebGLActiveInfo</h3>
+      <p>The WebGLActiveInfo interface is part of the WebGL API and represents the information returned by calling
+        the WebGLRenderingContext.getActiveAttrib() and WebGLRenderingContext.getActiveUniform() methods.</p>
+    </li>
+    <li>
+      <h3>WebGLBuffer</h3>
+      <p>The WebGLBuffer interface is part of the WebGL API and represents an opaque buffer object storing data such
+        as vertices or colors.</p>
+    </li>
+    <li>
+      <h3>WebGLContextEvent</h3>
+      <p>The WebContextEvent interface is part of the WebGL API and is an interface for an event that is generated
+        in response to a status change to the WebGL rendering context.</p>
+    </li>
+    <li>
+      <h3>WebGLFramebuffer</h3>
+      <p>The WebGLFramebuffer interface is part of the WebGL API and represents a collection of buffers that serve
+        as a rendering destination.</p>
+    </li>
+    <li>
+      <h3>WebGLProgram</h3>
+      <p>The WebGLProgram is part of the WebGL API and is a combination of two compiled WebGLShaders consisting of a
+        vertex shader and a fragment shader (both written in GLSL).</p>
+    </li>
+    <li>
+      <h3>WebGLQuery </h3>
+      <p>The WebGLQuery interface is part of the WebGL 2 API and provides ways to asynchronously query for
+        information. By default, occlusion queries and primitive queries are available.</p>
+    </li>
+    <li>
+      <h3>WebGLRenderbuffer</h3>
+      <p>The WebGLRenderbuffer interface is part of the WebGL API and represents a buffer that can contain an image,
+        or can be source or target of an rendering operation.</p>
+    </li>
+    <li>
+      <h3>WebGLRenderingContext</h3>
+      <p>The WebGLRenderingContext interface provides an interface to the OpenGL ES 2.0 graphics rendering context
+        for the drawing surface of an HTML &lt;canvas&gt; element.</p>
+    </li>
+    <li>
+      <h3>WebGLSampler </h3>
+      <p>The WebGLSampler interface is part of the WebGL 2 API and stores sampling parameters for WebGLTexture
+        access inside of a shader.</p>
+    </li>
+    <li>
+      <h3>WebGLShader</h3>
+      <p>The WebGLShader is part of the WebGL API and can either be a vertex or a fragment shader. A WebGLProgram
+        requires both types of shaders.</p>
+    </li>
+    <li>
+      <h3>WebGLShaderPrecisionFormat</h3>
+      <p>The WebGLShaderPrecisionFormat interface is part of the WebGL API and represents the information returned
+        by calling the WebGLRenderingContext.getShaderPrecisionFormat() method.</p>
+    </li>
+    <li>
+      <h3>WebGLSync </h3>
+      <p>The WebGLSync interface is part of the WebGL 2 API and is used to synchronize activities between the GPU
+        and the application.</p>
+    </li>
+    <li>
+      <h3>WebGLTexture</h3>
+      <p>The WebGLTexture interface is part of the WebGL API and represents an opaque texture object providing
+        storage and state for texturing operations.</p>
+    </li>
+    <li>
+      <h3>WebGLTransformFeedback</h3>
+      <p>The WebGLTransformFeedback interface is part of the WebGL 2 API and enables transform feedback, which is
+        the process of capturing primitives generated by vertex processing. It allows to preserve the post-transform
+        rendering state of an object and resubmit this data multiple times.</p>
+    </li>
+    <li>
+      <h3>WebGLUniformLocation</h3>
+      <p>The WebGLUniformLocation interface is part of the WebGL API and represents the location of a uniform
+        variable in a shader program.</p>
+    </li>
+    <li>
+      <h3>WebGLVertexArrayObject</h3>
+      <p>The WebGLVertexArrayObject interface is part of the WebGL 2 API, represents vertex array objects (VAOs)
+        pointing to vertex array data, and provides names for different sets of vertex data.</p>
+    </li>
+    <li>
+      <h3>WebKitCSSMatrix</h3>
+      <p>An alias for DOMMatrix.</p>
+    </li>
+    <li>
+      <h3>WebSocket</h3>
+      <p>The WebSocket object provides the API for creating and managing a WebSocket connection to a server, as well
+        as for sending and receiving data on the connection.</p>
+    </li>
+    <li>
+      <h3>WheelEvent</h3>
+      <p>The WheelEvent interface represents events that occur due to the user moving a mouse wheel or similar input
+        device.</p>
+    </li>
+    <li>
+      <h3>Window</h3>
+      <p>The Window interface represents a window containing a DOM document; the document property points to the DOM
+        document loaded in that window.</p>
+    </li>
+    <li>
+      <h3>WindowClient </h3>
+      <p>The WindowClient interface of the ServiceWorker API represents the scope of a service worker client that is
+        a document in a browsing context, controlled by an active worker. The service worker client independently
+        selects and uses a service worker for its own loading and sub-resources.</p>
+    </li>
+    <li>
+      <h3>WindowEventHandlers</h3>
+      <p>The WindowEventHandlers mixin describes the event handlers common to several interfaces like Window, or
+        HTMLBodyElement and HTMLFrameSetElement. Each of these interfaces can implement additional specific event
+        handlers.</p>
+    </li>
+    <li>
+      <h3>WindowOrWorkerGlobalScope</h3>
+      <p>The WindowOrWorkerGlobalScope mixin describes several features common to the Window and WorkerGlobalScope
+        interfaces.</p>
+    </li>
+    <li>
+      <h3>Worker</h3>
+      <p>The Worker interface of the Web Workers API represents a background task that can be created via script,
+        which can send messages back to its creator.</p>
+    </li>
+    <li>
+      <h3>WorkerGlobalScope</h3>
+      <p>The WorkerGlobalScope interface of the Web Workers API is an interface representing the scope of any
+        worker. Workers have no browsing context; this scope contains the information usually conveyed by Window
+        objects — in this case event handlers, the console or the associated WorkerNavigator object. Each
+        WorkerGlobalScope has its own event loop.</p>
+    </li>
+    <li>
+      <h3>WorkerLocation</h3>
+      <p>The WorkerLocation interface defines the absolute location of the script executed by the Worker. Such an
+        object is initialized for each worker and is available via the WorkerGlobalScope.location property obtained
+        by calling self.location.</p>
+    </li>
+    <li>
+      <h3>WorkerNavigator</h3>
+      <p>The WorkerNavigator interface represents a subset of the Navigator interface allowed to be accessed from a
+        Worker. Such an object is initialized for each worker and is available via the WorkerGlobalScope.navigator
+        property obtained by calling window.self.navigator.</p>
+    </li>
+    <li>
+      <h3>Worklet </h3>
+      <p>The Worklet interface is a lightweight version of Web Workers and gives developers access to low-level
+        parts of the rendering pipeline.</p>
+    </li>
+    <li>
+      <h3>WritableStream </h3>
+      <p>The WritableStream interface of the the Streams API provides&nbsp;a standard abstraction for writing
+        streaming data to a destination, known as a sink. This object comes with built-in backpressure and queuing.
+      </p>
+    </li>
+    <li>
+      <h3>WritableStreamDefaultController </h3>
+      <p>The WritableStreamDefaultController interface of the the Streams API represents a controller allowing
+        control of a&nbsp;WritableStream's state. When constructing a WritableStream, the underlying sink is given a
+        corresponding WritableStreamDefaultController instance to manipulate.</p>
+    </li>
+    <li>
+      <h3>WritableStreamDefaultWriter </h3>
+      <p>The WritableStreamDefaultWriter interface of the the Streams API is the object returned by
+        WritableStream.getWriter() and once created locks the writer to the WritableStream ensuring that no other
+        streams can write to the underlying sink.</p>
+    </li>
+  </ul>
+  <span>X</span>
+  <ul>
+    <li>
+      <h3>XDomainRequest </h3>
+      <p>XDomainRequest is an implementation of&nbsp;HTTP access control (CORS) that worked in Internet Explorer 8
+        and 9. It was removed in Internet Explorer 10 in favor of using&nbsp;XMLHttpRequest with proper CORS; if you
+        are targeting Internet Explorer 10 or later, or wish to support any other browser, you need to use standard
+        HTTP access control.</p>
+    </li>
+    <li>
+      <h3>XMLDocument</h3>
+      <p>The XMLDocument interface represents an XML document. It inherits from the generic Document and does not
+        add any specific methods or properties to it: nevertheless, several algorithms behave differently with the
+        two types of documents.</p>
+    </li>
+    <li>
+      <h3>XMLHttpRequest</h3>
+      <p>Use XMLHttpRequest (XHR) objects to interact with servers. You can retrieve data from a URL without having
+        to do a full page refresh. This enables a Web page to update just part of a page without disrupting what the
+        user is doing.</p>
+    </li>
+    <li>
+      <h3>XMLHttpRequestEventTarget</h3>
+      <p>XMLHttpRequestEventTarget is the interface that describes the event handlers you can implement in an object
+        that will handle events for an XMLHttpRequest.</p>
+    </li>
+    <li>
+      <h3>XMLHttpRequestResponseType</h3>
+      <p>The XMLHttpRequestResponseType type is an enumerated set of strings which are used to specify the type of
+        data contained in the response of an XMLHttpRequest.</p>
+    </li>
+    <li>
+      <h3>XMLSerializer</h3>
+      <p>The XMLSerializer interface provides the serializeToString() method to construct an XML string representing
+        a DOM tree.</p>
+    </li>
+    <li>
+      <h3>XPathEvaluator</h3>
+      <p>The&nbsp;XPathEvaluator interface allows to compile and evaluate XPath expressions.</p>
+    </li>
+    <li>
+      <h3>XPathException</h3>
+      <p>In the DOM XPath API the XPathException interface represents exception conditions that can be encountered
+        while performing XPath operations.</p>
+    </li>
+    <li>
+      <h3>XPathExpression</h3>
+      <p>This interface is a compiled XPath expression that can be evaluated on a document or specific node to
+        return information its DOM tree.</p>
+    </li>
+    <li>
+      <h3>XPathNSResolver</h3>
+      <p>The&nbsp;XPathNSResolver interface permits prefix strings in an XPath expression to be properly bound to
+        namespace URI strings.</p>
+    </li>
+    <li>
+      <h3>XPathResult</h3>
+      <p>The XPathResult interface represents the results generated by evaluating an XPath expression within the
+        context of a given node.</p>
+    </li>
+    <li>
+      <h3>XRBoundedReferenceSpace</h3>
+      <p>The WebXR Device API's&nbsp;XRBoundedReferenceSpace&nbsp;interface describes a virtual world reference
+        space which has preset boundaries. This extends XRReferenceSpace, which describes an essentially
+        unrestricted space around the viewer's position.</p>
+    </li>
+    <li>
+      <h3>XREnvironmentBlendMode</h3>
+      <p>The WebXR API's enumerated type&nbsp;XREnvironmentBlendMode&nbsp;defines strings used to identify if and
+        how to blend the rendered virtual content with the real world. Its values are used by the XRSession
+        interface's&nbsp;environmentBlendMode property.</p>
+    </li>
+    <li>
+      <h3>XREye</h3>
+      <p>The XREye enumerated type is used to identify which eye a particular XRView represents: left or right; or,
+        if the view doesn't represent a single eye, the value may be none.</p>
+    </li>
+    <li>
+      <h3>XRFrame</h3>
+      <p>A WebXR Device API&nbsp;XRFrame&nbsp;object is passed into the requestAnimationFrame() callback function
+        and provides&nbsp;access to the information needed in order to render a single frame of animation for an
+        XRSession describing a VR or AR sccene.</p>
+    </li>
+    <li>
+      <h3>XRFrameRequestCallback</h3>
+      <p>The XRFrameRequestCallback&nbsp;is a callback function passed into XRSession.requestAnimationFrame (part of
+        WebXR API)&nbsp;to obtain the current time and the current XRFrame.</p>
+    </li>
+    <li>
+      <h3>XRHandedness</h3>
+      <p>The WebXR enumerated type&nbsp;XRHandedness&nbsp;provides values which identify which of a user's hands is
+        being used to operate a particular input controller attached to the XR input device being
+        used.&nbsp;XRHandedness&nbsp;is used as the value of the&nbsp;the XRInputSource property handedness.</p>
+    </li>
+    <li>
+      <h3>XRInputSource </h3>
+      <p>The WebXR Device API's XRInputSource interface describes a single source of control input which is part of
+        the user's WebXR-compatible virtual or augmented reality system.</p>
+    </li>
+    <li>
+      <h3>XRInputSourceArray</h3>
+      <p>The interface&nbsp;XRInputSourceArray&nbsp;represents a&nbsp;live&nbsp;list of WebXR input sources, and is
+        used as the return value of the&nbsp;XRSession property&nbsp;inputSources.</p>
+    </li>
+    <li>
+      <h3>XRInputSourceEvent</h3>
+      <p>The WebXR Device API's XRInputSourceEvent interface describes an event which has occurred on a WebXR user
+        input device such as a hand controller, gaze tracking system, or motion tracking system.</p>
+    </li>
+    <li>
+      <h3>XRInputSourceEventInit</h3>
+      <p>The XRInputSourceEventInit dictionary is used when calling the XRInputSourceEvent() constructor to provide
+        configuration options for the newly-created XRInputSourceEvent object to take on.</p>
+    </li>
+    <li>
+      <h3>XRInputSourcesChangeEvent</h3>
+      <p>The WebXR Device API interface XRInputSourcesChangeEvent is used to represent the inputsourceschange event
+        sent to an XRSession when the set of available WebXR input controllers changes.</p>
+    </li>
+    <li>
+      <h3>XRInputSourcesChangeEventInit</h3>
+      <p>The XRInputSourcesChangeEventInit dictionary is used to provide options to the XRInputSourcesChangeEvent()
+        constructor in order to set the initial state of the new&nbsp;XRInputSourcesChangeEvent object.</p>
+    </li>
+    <li>
+      <h3>XRPermissionDescriptor</h3>
+      <p>User permissions in the WebXR Device API are managed using the Permissions API. To that end,
+        the&nbsp;XRPermissionDescriptor&nbsp;dictionary is used to describe the WebXR features the app needs to use,
+        as well as those features it would like ot use if permision is granted.</p>
+    </li>
+    <li>
+      <h3>XRPose</h3>
+      <p>XRPose is a WebXR API interface representing a position and orientation in the 3D space, relative to the
+        XRSpace within which it resides.</p>
+    </li>
+    <li>
+      <h3>XRReferenceSpace</h3>
+      <p>The WebXR Device API's&nbsp;XRReferenceSpace&nbsp;interface describes the coordinate system for a specific
+        tracked entity or object within the virtual world using a specified tracking behavior.</p>
+    </li>
+    <li>
+      <h3>XRReferenceSpaceEvent</h3>
+      <p>The WebXR Device API interface XRReferenceSpaceEvent represents an event sent to an XRReferenceSpace.
+        Currently, the only event&nbsp; that uses this type is the reset event.</p>
+    </li>
+    <li>
+      <h3>XRReferenceSpaceEventInit</h3>
+      <p>The XRReferenceSpaceEventInit dictionary is used when calling the XRReferenceSpaceEvent() constructor to
+        provide the values for its properties. Since the properties are read-only, this is the only opportunity
+        available to set their values.</p>
+    </li>
+    <li>
+      <h3>XRReferenceSpaceType</h3>
+      <p>The&nbsp;XRReferenceSpaceType&nbsp;enumerated type defines the strings which identify the types of
+        reference spaces supported by WebXR.</p>
+    </li>
+    <li>
+      <h3>XRRenderState </h3>
+      <p>The XRRenderState interface of the WebXR Device API&nbsp;contains configurable values which&nbsp;affect how
+        the imagery generated by an&nbsp;XRSession&nbsp;gets composited.&nbsp;</p>
+    </li>
+    <li>
+      <h3>XRRenderStateInit</h3>
+      <p>The&nbsp;XRRenderStateInit&nbsp;dictionary is a writeable version of the XRRenderState interface, and is
+        used when calling an XRSession's updateRenderState() method to apply changes to the render state prior to
+        rendering the next frame.</p>
+    </li>
+    <li>
+      <h3>XRRigidTransform</h3>
+      <p>The XRRigidTransform&nbsp;is a WebXR API interface that represents the 3D geometric transform described by
+        a position and orientation.</p>
+    </li>
+    <li>
+      <h3>XRSession</h3>
+      <p>The WebXR Device API's XRSession interface represents an ongoing XR session, providing methods and
+        properties used to interact with and control the session. To open a WebXR session, use the XR interface's
+        requestSession() method.</p>
+    </li>
+    <li>
+      <h3>XRSessionEvent</h3>
+      <p>The WebXR Device API's XRSessionEvent interface describes an event which indicates the change of the state
+        of an XRSession.</p>
+    </li>
+    <li>
+      <h3>XRSessionEventInit</h3>
+      <p>The XRSessionEventInit dictionary is used when calling the XRSessionEvent() constructor to provide the new
+        event's initial values.</p>
+    </li>
+    <li>
+      <h3>XRSessionInit</h3>
+      <p>The WebXR Device API dictionary XRSessionInit&nbsp;specifies required and/or optional features when
+        requesting a new XRSession by calling the XR.requestSession() method.</p>
+    </li>
+    <li>
+      <h3>XRSessionMode</h3>
+      <p>The WebXR Device API's XRSessionMode enumerated type defines the string values used to identify the
+        possible kinds of session mode that can be used.</p>
+    </li>
+    <li>
+      <h3>XRSpace </h3>
+      <p>The XRSpace interface of the WebXR Device API is an abstract interface providing a common basis for every
+        class which represents a virtual coordinate system within the virtual world, in which its origin corresponds
+        to a physical location.</p>
+    </li>
+    <li>
+      <h3>XRSystem </h3>
+      <p>The WebXR Device API interface XRSystem provides methods which let you get access to an XRSession object
+        representing a WebXR session. With that XRSession in hand, you can use it to interact with the Augmented
+        Reality (AR) or Virtual Reality (VR) device.</p>
+    </li>
+    <li>
+      <h3>XRTargetRayMode</h3>
+      <p>The WebXR Device API enumerated type&nbsp;XRTargetRayMode describes the method by an input controller's
+        targeting ray is being produced.</p>
+    </li>
+    <li>
+      <h3>XRView</h3>
+      <p>The WebXR Device API's XRView interface provides information describing a single view into the XR scene for
+        a specific frame, providing orientation and position information for the viewpoint.</p>
+    </li>
+    <li>
+      <h3>XRViewerPose</h3>
+      <p>The WebXR Device API interface XRViewerPose represents the pose (the position and orientation) of a
+        viewer's point of view on the scene. Each XRViewerPose can have multiple views to represent, for example,
+        the slight separation between the left and right eye.</p>
+    </li>
+    <li>
+      <h3>XRViewport</h3>
+      <p>The WebXR Device API's XRViewport interface provides properties used to describe the size and position of
+        the current viewport within the XRWebGLLayer being used to render the 3D scene.</p>
+    </li>
+    <li>
+      <h3>XRVisibilityState</h3>
+      <p>The&nbsp;XRVisibilityState&nbsp;enumerated type defines the string values which are valid for the XRSession
+        interface's visibilityState property, which indicates whether or not an XR session is currently visible to
+        the user, and if it is, whether or not it's currently the primary focus.</p>
+    </li>
+    <li>
+      <h3>XRWebGLLayer </h3>
+      <p>The XRWebGLLayer interface of the WebXR Device API provides a linkage between the WebXR device (or
+        simulated XR device, in the case of an inline session) and a WebGL context used to render the scene for
+        display on the device.</p>
+    </li>
+    <li>
+      <h3>XRWebGLLayerInit</h3>
+      <p>The WebXR Device API's XRWebGLLayerInit dictionary is used to provide configuration options when creating a
+        new XRWebGLLayer object with the XRWebGLLayer() constructor.</p>
+    </li>
+    <li>
+      <h3>XSLTProcessor</h3>
+      <p>An XSLTProcessor applies an XSLT stylesheet transformation to an XML document to produce a new XML document
+        as output. It has methods to load the XSLT stylesheet, to manipulate &lt;xsl:param&gt; parameter values, and
+        to apply the transformation to documents.</p>
+    </li>
+  </ul>
+</body>
+</html>
